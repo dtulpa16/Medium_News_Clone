@@ -2,15 +2,17 @@ import React from "react";
 
 export default function HomeBanner() {
   return (
-    <div className="text-black bg-[#ffc017]">
-      <div className="flex-col lg:flex-row-reverse">
-        <div>
-          <h1 className="text-5xl font-bold">Stay Curious</h1>
-          <p className="py-6">
+    <div className="flex flex-col md:pl-64 pl-12 justify-center text-black bg-[#ffc017] min-h-[534px] ">
+      <div className="md:w-3/5">
+        <h1 className="text-5xl font-bold md:text-[85px] text-[70px]">
+          Stay Curious
+        </h1>
+        <h2 className="py-6 md:text-[35px] text-[25px] md:w-4/5">
           Discover stories, thinking, and expertise from writers on any topic.
-          </p>
-          <button className="btn btn-primary">Get Started</button>
-        </div>
+        </h2>
+        <button className="bg-[#191919] px-16 py-4 rounded-2xl text-zinc-100 font-bold text-xl">
+          Get Started
+        </button>
       </div>
     </div>
   );
