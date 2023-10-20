@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rounded-squeeze {
+    border-radius: 50% 50% 50% 50%;
+  }
+.rounded-squeeze-bottom {
+    border-radius: 75% 75% 75% 75%;
+  }
