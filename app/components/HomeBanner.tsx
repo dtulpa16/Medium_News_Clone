@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomeBanner() {
   return (
-    <div className="flex flex-col md:pl-64 pl-12 justify-center text-black bg-[#ffc017] min-h-[534px] ">
+    <div className="flex flex-col justify-center text-black bg-[#ffc017] min-h-[534px]">
       <div className="md:w-3/5">
         <h1 className="text-5xl font-bold md:text-[85px] text-[70px]">
           Stay Curious
