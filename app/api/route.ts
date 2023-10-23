@@ -1,3 +1,7 @@
+import { Article } from "../lib/types";
+type ApiResponse = {
+  data: Article[];
+}
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const category = searchParams.get("category") || "world";
@@ -12,8 +16,7 @@ export async function GET(request: Request) {
       },
     }
   );
-  debugger
-  const data = await res.json();
+  const data: Article[] = await res.json();
 
-  return Response.json({ data });
+  return Response.json({ data }); 
 }
