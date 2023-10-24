@@ -7,5 +7,10 @@ export default async function NewsFeedList() {
   const newsFeed = newsList.data.map((el: Article, i: number) => (
     <NewsCard article={el} count={i} />
   ));
-  return <div className="pt-12 flex flex-wrap">{newsFeed}</div>;
+  return (
+    <div className="flex flex-col pt-11 pb-2">
+      <h2 className="text-black font-semibold text-lg">Trending on Shmedium</h2>
+      <div className="flex flex-wrap">{newsFeed}</div>;
+    </div>
+  );
 }
