@@ -11,11 +11,11 @@ const formatDate = (dateStr : string) => {
 }
 export default function NewsCard({ article, count }: NewsCardProps) {
   return (
-    <div className="xl:w-1/3 md:w-1/2 w-full flex gap-5 p-2">
+    <div className="xl:w-1/3 md:w-1/2 w-full flex gap-5 p-2 py-4 tracking-tight">
       <div className=" font-bold text-gray-200 text-3xl">{count + 1 < 10 && 0}{count + 1}</div>
-      <div className="flex flex-col overflow-auto text-black gap-1">
-        <a href="">{article.sourceName}</a>
-        <h3 className="line-clamp-2 font-bold">{article.title}</h3>
+      <div className="flex flex-col overflow-auto text-black gap-2">
+        <a href="" className="text-sm">{article.sourceName}</a>
+        <h3 className="line-clamp-2 font-bold text-lg max-w-[320px]">{article.title}</h3>
         <h4 className="line-clamp-2 font-thin text-sm">{formatDate(article.publishedAt)}</h4>
       </div>
     </div>
