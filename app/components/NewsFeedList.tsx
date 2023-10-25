@@ -17,7 +17,7 @@ export default async function NewsFeedList() {
           Trending on Shmedium
         </h2>
       </div>
-      <div className="flex flex-wrap">{newsFeed}</div>;
+      <div className="flex flex-wrap w-11/12">{newsFeed}</div>;
     </div>
   );
 }
