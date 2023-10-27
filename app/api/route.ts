@@ -6,7 +6,7 @@ export async function GET(request: Request) {
   const category = headersList.get("category") || "world";
   // const category = searchParams.get("category") || "world";
   const page = searchParams.get("page") || "1";
-  const limit = searchParams.get("limit") || "20";
+  const limit = searchParams.get("limit") || "6";
 
   debugger
   const res = await fetch(
@@ -20,6 +20,6 @@ export async function GET(request: Request) {
     
   );
   const data: Article[] = await res.json();
-  console.log("CAT: ",category)
+  console.log("data: ",data)
   return Response.json({ data }); 
 }
