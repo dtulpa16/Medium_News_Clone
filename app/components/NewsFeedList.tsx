@@ -2,6 +2,7 @@ import React from "react";
 import { Article } from "../lib/types";
 import NewsCard from "./NewsCard";
 import TrendingIcon from "../lib/icons/TrendingIcon";
+import SubFeed from "./SubFeed";
 
 export default async function NewsFeedList() {
   const data = await fetch(`${process.env.BASE_URL}/api`);
@@ -19,7 +20,8 @@ export default async function NewsFeedList() {
           Trending on Shmedium
         </h2>
       </div>
-      <div className="flex flex-wrap w-11/12 ">{newsFeed}</div>;
+      <div className="flex flex-wrap w-11/12 ">{newsFeed}</div>
+      <SubFeed articles={subNewsList} />
     </div>
   );
 }
