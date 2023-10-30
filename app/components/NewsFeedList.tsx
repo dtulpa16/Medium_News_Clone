@@ -13,14 +13,16 @@ export default async function NewsFeedList() {
     <NewsCard article={el} count={i} />
   ));
   return (
-    <div className="flex flex-col pt-11 pb-2 border-zinc-500 border-solid border-b-[1px]">
-      <div className="ml-3 flex flex-row gap-4">
-        <TrendingIcon />
-        <h2 className="text-black font-semibold text-lg">
-          Trending on Shmedium
-        </h2>
+    <div className="flex flex-col pt-11 xl:gap-16 gap-8">
+      <div className=" border-zinc-300 border-solid border-b-[1px] w-full pb-10">
+        <div className="ml-3 flex flex-row gap-4">
+          <TrendingIcon />
+          <h2 className="text-black font-semibold text-lg">
+            Trending on Shmedium
+          </h2>
+        </div>
+        <div className="flex flex-wrap w-11/12 ">{newsFeed}</div>
       </div>
-      <div className="flex flex-wrap w-11/12 ">{newsFeed}</div>
       <SubFeed articles={subNewsList} />
     </div>
   );
