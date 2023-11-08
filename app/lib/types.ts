@@ -10,3 +10,6 @@ export type Article = {
   sourceName: string;
   title: string;
 };
+export type HomePageProps = {
+  searchParams: Record<string, string> | null | undefined;
+};

@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { UserButton } from "@clerk/nextjs";
 export default function Navbar() {
+  const router = useRouter();
   return (
     <div className="fixed top-0 w-full z-10 bg-[#ffc017]">
       <div className="xl:pl-96 md:pl-[75px] pl-4">
@@ -13,22 +16,23 @@ export default function Navbar() {
             <div className="min-h-[26px] w-[7px] bg-black rounded-e-full rounded-s-full rounded-squeeze-bottom"></div>
             <h2 className=" text-[28px] font-bold pl-2">Shmedium</h2>
           </div>
-          {/* <div className=" hidden lg:flex">
-        
-      </div> */}
+
           <div className="navbar-end">
             <ul className="md:gap-6 px-1 lg:flex hidden md:pr-4">
               <li>
-                <Link href="/">Our Story</Link>
+                <div onClick={() => router.push("/")}>Our Story</div>
               </li>
               <li>
-                <Link href="/">Membership</Link>
+                <div onClick={() => router.push("/")}>Membership</div>
               </li>
               <li>
-                <Link href="/">Write</Link>
+                <div onClick={() => router.push("/")}>Write</div>
               </li>
               <li>
-                <Link href="/">Sign In</Link>
+                <div onClick={() => router.push("/sign-in")}>Sign In</div>
+              </li>
+              <li>
+                <UserButton afterSignOutUrl="/" />
               </li>
             </ul>
             <a className="bg-[#191919] px-4 py-2 rounded-full text-white text-md">

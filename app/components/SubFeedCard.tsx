@@ -10,7 +10,7 @@ const bodyPlaceholder =
 const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
   return (
     <div className="flex xl:h-[175px] md:h-[150px] xl:gap-6 md:gap-4 gap-6">
-      <div className="flex flex-col text-black gap-2 md:max-w-[400px] max-w-[222px]">
+      <div className="flex flex-col text-black gap-2 xl:max-w-[650px] md:max-w-[400px] max-w-[222px]">
         <Link href="" className="text-sm">
           {article.sourceName}
         </Link>

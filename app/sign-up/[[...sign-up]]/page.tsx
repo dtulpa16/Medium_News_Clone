@@ -1,0 +1,19 @@
+import { SignUp } from "@clerk/nextjs";
+import { neobrutalism } from "@clerk/themes";
+ 
+export default function Page() {
+  return (
+    <div className="flex justify-center items-center min-h-screen">
+      <SignUp
+        appearance={{
+          baseTheme: neobrutalism,
+          elements: {
+            formButtonPrimary:
+              "bg-[#ffc017] hover:bg-[#fbc121] text-sm text-black normal-case",
+            footerActionLink: "text-black",
+          },
+        }}
+      />
+    </div>
+  );
+}
