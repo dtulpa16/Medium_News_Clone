@@ -14,30 +14,58 @@ export default function Navbar() {
             <div className="min-h-[27px] w-[14px] bg-black rounded-squeeze"></div>
 
             <div className="min-h-[26px] w-[7px] bg-black rounded-e-full rounded-s-full rounded-squeeze-bottom"></div>
-            <h2 className=" text-[28px] font-bold pl-2">Shmedium</h2>
+            <h2
+              className=" text-[28px] font-bold pl-2 hover:cursor-pointer"
+              onClick={() => router.push("/")}
+            >
+              Shmedium
+            </h2>
           </div>
 
           <div className="navbar-end">
             <ul className="md:gap-6 px-1 lg:flex hidden md:pr-4">
               <li>
-                <div onClick={() => router.push("/")}>Our Story</div>
+                <div
+                  className="underline-animation"
+                  onClick={() => router.push("/")}
+                >
+                  Our Story
+                </div>
               </li>
               <li>
-                <div onClick={() => router.push("/")}>Membership</div>
+                <div
+                  className="underline-animation"
+                  onClick={() => router.push("/")}
+                >
+                  Membership
+                </div>
               </li>
               <li>
-                <div onClick={() => router.push("/")}>Write</div>
+                <div
+                  className="underline-animation"
+                  onClick={() => router.push("/")}
+                >
+                  Write
+                </div>
               </li>
               <li>
-                <div onClick={() => router.push("/sign-in")}>Sign In</div>
+                <div
+                  className="underline-animation"
+                  onClick={() => router.push("/sign-in")}
+                >
+                  Sign In
+                </div>
               </li>
               <li>
                 <UserButton afterSignOutUrl="/" />
               </li>
             </ul>
-            <a className="bg-[#191919] px-4 py-2 rounded-full text-white text-md">
+            <div
+              onClick={() => router.push("sign-up")}
+              className="bg-[#191919] px-4 py-2 rounded-full text-white text-md hover:cursor-pointer"
+            >
               Get Started
-            </a>
+            </div>
           </div>
         </div>
         <div className="w-full absolute left-0 border-black border-solid border-b-[1px]" />

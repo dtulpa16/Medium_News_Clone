@@ -1,9 +1,11 @@
+import Navbar from "@/app/components/Navbar";
 import { SignUp } from "@clerk/nextjs";
 import { neobrutalism } from "@clerk/themes";
  
 export default function Page() {
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen bg-[#fbc121]">
+      <Navbar/>
       <SignUp
         appearance={{
           baseTheme: neobrutalism,

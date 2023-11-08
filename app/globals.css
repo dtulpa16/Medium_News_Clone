@@ -8,15 +8,23 @@
 .rounded-squeeze-bottom {
   border-radius: 75% 75% 75% 75%;
 }
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+.underline-animation {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-@keyframes scaleIn {
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: currentColor; /* Makes the pseudo-element the same color as the text */
+  height: 1px; /* Adjust the height for thicker underline */
+  transition: right 150ms ease-in-out;
+}
+
+.underline-animation:hover::after {
+  right: 0;
 }
