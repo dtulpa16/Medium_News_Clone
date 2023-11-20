@@ -13,13 +13,13 @@ const Tabs: string[] = [
 
 export default function DiscoverTabs() {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="md:flex flex-col gap-3 hidden">
       <h4 className="font-bold text-black text-lg">
         Discover more of what matters to you
       </h4>
-      <div className="flex gap-3  flex-wrap relative w-5/6">
+      <div className="flex gap-3  flex-wrap relative w-4/6">
         {Tabs.map((el, i) => (
-          <div className=" text-black text-sm p-3 rounded-full bg-[#f2f2f2]">{el}</div>
+          <div className=" text-black text-sm p-3 px-4 rounded-full bg-[#f2f2f2]">{el}</div>
         ))}
       </div>
     </div>
