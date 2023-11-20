@@ -6,7 +6,7 @@ export async function GET(request: Request) {
   const category = headersList.get("category") || "world";
   // const category = searchParams.get("category") || "world";
   const page = searchParams.get("page") || "1";
-  const limit = searchParams.get("limit") || "6";
+  const limit = searchParams.get("limit") || "20";
 
   debugger
   const res = await fetch(
