@@ -3,6 +3,7 @@ import { Article } from "../lib/types";
 import NewsCard from "./NewsCard";
 import TrendingIcon from "../lib/icons/TrendingIcon";
 import SubFeed from "./SubFeed";
+import DiscoverTabs from "./DiscoverTabs";
 
 export default async function NewsFeedList() {
   const data = await fetch(`${process.env.BASE_URL}/api`);
@@ -23,7 +24,10 @@ export default async function NewsFeedList() {
         </div>
         <div className="flex flex-wrap w-11/12 ">{newsFeed}</div>
       </div>
-      <SubFeed articles={subNewsList} />
+      <div className="lg:flex block gap-8">
+        <SubFeed articles={subNewsList} />
+        <DiscoverTabs />
+      </div>
     </div>
   );
 }
