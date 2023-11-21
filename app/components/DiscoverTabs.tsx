@@ -19,7 +19,7 @@ export default function DiscoverTabs() {
       </h4>
       <div className="flex gap-3  flex-wrap relative w-4/6">
         {Tabs.map((el, i) => (
-          <div className=" text-black text-sm p-3 px-4 rounded-full bg-[#f2f2f2]">{el}</div>
+          <div key={i} className=" text-black text-sm p-3 px-4 rounded-full hover:cursor-pointer bg-[#f2f2f2]">{el}</div>
         ))}
       </div>
     </div>
