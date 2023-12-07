@@ -19,7 +19,7 @@ export default async function NewsFeedList() {
         <div className="ml-3 flex flex-row gap-4">
           <TrendingIcon />
           <h2 className="text-black font-semibold text-lg">
-            Trending on Shmedium
+            Trending on Medium
           </h2>
         </div>
         <div className="flex flex-wrap w-11/12 ">{newsFeed}</div>

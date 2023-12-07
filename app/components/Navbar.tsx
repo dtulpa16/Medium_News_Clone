@@ -18,7 +18,7 @@ export default function Navbar() {
               className=" text-[28px] font-bold pl-2 hover:cursor-pointer"
               onClick={() => router.push("/")}
             >
-              Shmedium
+              Medium
             </h2>
           </div>
 

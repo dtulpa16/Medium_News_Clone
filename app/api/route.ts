@@ -20,6 +20,5 @@ export async function GET(request: Request) {
     
   );
   const data: Article[] = await res.json();
-  console.log("data: ",data)
   return Response.json({ data }); 
 }
