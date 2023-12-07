@@ -13,8 +13,8 @@ export default function RecommendedStories({
 }: RecommendedStoryCardProps) {
 
   return (
-    <div key={key} className=" flex flex-col gap-3 w-full md:w-[45%]">
-      <img src={article.image} className="min-h-[171px] md:min-h-[381px] w-full object-cover bg-[url('https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg')]" />
+    <div key={key} className=" flex flex-col gap-3 w-full md:w-[35%]">
+      <img src={article.image} className="min-h-[171px] md:h-[381px] w-full object-cover bg-[url('https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg')]" />
       <Link href="" className="text-sm">
         {article.sourceName}
       </Link>
