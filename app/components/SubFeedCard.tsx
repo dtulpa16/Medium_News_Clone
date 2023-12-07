@@ -5,7 +5,7 @@ import { formatDate } from "./NewsCard";
 type SubFeedCardProps = {
   article: Article;
 };
-const bodyPlaceholder =
+export const bodyPlaceholder =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
   return (
@@ -20,7 +20,7 @@ const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
           {formatDate(article.publishedAt)}
         </h4>
       </div>
-      <img src={article.image} className="md:w-[200px] md:h-[134px] w-[100px] h-[100px] aspect-auto" />
+      <img src={article.image} className="md:min-w-[200px] md:h-[134px] w-[100px] h-[100px] aspect-auto bg-[url('https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg')]" />
     </div>
   );
 };

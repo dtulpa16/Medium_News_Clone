@@ -3,7 +3,7 @@ import React from "react";
 
 const Tabs: { label: string; value: string }[] = [
   { label: "Programming", value: "science_and_technology" },
-  { label: "Sports", value: "sports" },
+  { label: "Sports", value: "sport" },
   { label: "World News", value: "world" },
   { label: "Business", value: "business" },
   { label: "Education", value: "education" },
