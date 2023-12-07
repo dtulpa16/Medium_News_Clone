@@ -2,6 +2,7 @@ import NewsCard from "@/app/components/NewsCard";
 import { Article } from "@/app/lib/types";
 import React from "react";
 import RecommendedStories from "./RecommendedStories";
+import SubPageNavBar from "@/app/components/SubPageNavBar";
 
 export default async function TagPage({
   params,
@@ -24,8 +25,11 @@ export default async function TagPage({
   ));
 
   return (
-    <div className="max-w-[1192px]">
-      <div className="flex flex-wrap w-11/12 ">{recommendedNews}</div>
+    <div className=" bg-white min-h-screen">
+      <SubPageNavBar />
+      <div className="flex flex-wrap justify-center gap-12 w-10/12 mx-auto">
+        {recommendedNews}
+      </div>
       {/* <div className="flex flex-wrap w-11/12 ">{newsFeed}</div> */}
     </div>
   );
