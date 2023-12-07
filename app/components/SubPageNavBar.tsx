@@ -25,13 +25,16 @@ export default function SubPageNavBar() {
             />
           </div>
         </div>
-        <div className="flex items-center space-x-4">
-          <PencilAltIcon className="h-6 w-6 text-gray-600" />
-          <button className="bg-green-500 text-white text-sm px-4 py-2 rounded-full shadow-sm hover:bg-green-600">
+        <div className="flex items-center md:gap-6 gap-2">
+          <div className="flex items-center gap-1 mr-2">
+            <PencilAltIcon className="h-6 w-6 text-gray-600" />
+            <p className="text-sm md:block hidden">Write</p>
+          </div>
+          <button className="bg-[#1a8917] text-white text-sm md:px-3 px-2 md:py-2 py-[3px] rounded-full shadow-sm hover:bg-green-600">
             Sign up
           </button>
           <span className="text-sm">Sign in</span>
-          <UserIcon className="h-6 w-6 text-gray-600" />
+          <UserIcon className="h-6 w-6 text-gray-600 md:ml-auto ml-2" />
         </div>
       </div>
     </nav>
