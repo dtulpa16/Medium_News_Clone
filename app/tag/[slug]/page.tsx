@@ -3,16 +3,22 @@ import { Article } from "@/app/lib/types";
 import React from "react";
 import RecommendedStories from "./RecommendedStories";
 import SubPageNavBar from "@/app/components/SubPageNavBar";
+import TagHeader from "./TagHeader";
 
 export default async function TagPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+    params,
+    searchParams,
+  }: {
+    params: { slug: string }
+    searchParams: { [key: string]: string | string[] | undefined }
+  }) {
+  //Fetch Data
   const data = await fetch(`${process.env.BASE_URL}/api`, {
     headers: { category: params.slug },
   });
+  //Parse Data
   const categoryNews = await data.json();
+  const topic = searchParams?.value
   //Recommended Stories
   const recommendedStories = categoryNews.data.slice(0, 2);
   const recommendedNews = recommendedStories.map((el: Article, i: number) => (
@@ -27,8 +33,11 @@ export default async function TagPage({
   return (
     <div className=" bg-white min-h-screen">
       <SubPageNavBar />
-      <div className="flex flex-wrap justify-center gap-12 w-10/12 mx-auto">
-        {recommendedNews}
+      <div className="">
+        <TagHeader tag={topic} />
+        <div className="flex flex-wrap justify-center gap-12 w-10/12 mx-auto">
+          {recommendedNews}
+        </div>
       </div>
       {/* <div className="flex flex-wrap w-11/12 ">{newsFeed}</div> */}
     </div>

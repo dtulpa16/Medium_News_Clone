@@ -21,7 +21,7 @@ export default function DiscoverTabs() {
       <div className="flex gap-3  flex-wrap relative w-4/6">
         {Tabs.map((el, i) => (
           <Link
-            href={`/tag/${el.value}`}
+            href={`/tag/${el.value}?value=${el.label}`}
             key={i}
             className=" text-black text-sm p-3 px-4 rounded-full hover:cursor-pointer bg-[#f2f2f2]"
           >
