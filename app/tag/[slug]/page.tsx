@@ -1,3 +1,5 @@
+import NewsCard from "@/app/components/NewsCard";
+import { Article } from "@/app/lib/types";
 import React from "react";
 
 export default async function TagPage({
@@ -10,5 +12,15 @@ export default async function TagPage({
   });
   const categoryNews = await data.json();
   console.log("TAG DATA: ", categoryNews);
-  return <div>page</div>;
+
+  const recommendedStories = categoryNews.data.slice(0, 2);
+  const mainCategoryNews = categoryNews.data.slice(3, categoryNews.data.length);
+  const newsFeed = mainCategoryNews.map((el: Article, i: number) => (
+    <NewsCard article={el} count={i} />
+  ));
+  return (
+    <div>
+      <div className="flex flex-wrap w-11/12 ">{newsFeed}</div>
+    </div>
+  );
 }
