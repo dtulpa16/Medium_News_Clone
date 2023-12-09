@@ -36,12 +36,12 @@ export default async function TagPage({
       <SubPageNavBar />
 
       <TagHeader tag={topic} />
-      <div className="flex flex-col w-11/12 md:w-[63%] mx-auto">
+      <div className="flex flex-col w-11/12 2xl:w-[65%] mx-auto">
         <h1 className="border-t-[1px] py-6 md:py-8 font-semibold text-xl md:text-3xl text-black "> Recommended stories </h1>
         <div className="flex flex-wrap justify-between">
           {recommendedNews}
         </div>
-        <div className="flex flex-wrap justify-center gap-12 py-8">
+        <div className="flex flex-wrap justify-between py-6 border-t-[1px] my-8 md:my-10">
           {newsFeed}
         </div>
       </div>

@@ -10,7 +10,7 @@ type TagStoryCardProps = {
 
 export default function TagStories({article, key}: TagStoryCardProps) {
     return (
-        <div key={key} className="flex flex-col gap-3 w-full md:w-1/4">
+        <div key={key} className="flex flex-col gap-3 md:px-4 py-4 md:py-auto w-full sm:w-1/2 lg:w-1/2 xl:w-1/3">
           <img src={article.image} className="min-h-[171px] md:h-[182px] w-full object-cover bg-[url('https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg')]" />
           <Link href="" className="text-sm">
             {article.sourceName}
