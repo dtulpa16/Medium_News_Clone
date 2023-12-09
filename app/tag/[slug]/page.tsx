@@ -4,21 +4,22 @@ import React from "react";
 import RecommendedStories from "./RecommendedStories";
 import SubPageNavBar from "@/app/components/SubPageNavBar";
 import TagHeader from "./TagHeader";
+import TagStories from "./TagStories";
 
 export default async function TagPage({
-    params,
-    searchParams,
-  }: {
-    params: { slug: string }
-    searchParams: { [key: string]: string | string[] | undefined }
-  }) {
+  params,
+  searchParams,
+}: {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+}) {
   //Fetch Data
   const data = await fetch(`${process.env.BASE_URL}/api`, {
     headers: { category: params.slug },
   });
   //Parse Data
   const categoryNews = await data.json();
-  const topic = searchParams?.value
+  const topic = searchParams?.value;
   //Recommended Stories
   const recommendedStories = categoryNews.data.slice(0, 2);
   const recommendedNews = recommendedStories.map((el: Article, i: number) => (
@@ -27,18 +28,24 @@ export default async function TagPage({
   // Main Stories
   const mainCategoryNews = categoryNews.data.slice(3, categoryNews.data.length);
   const newsFeed = mainCategoryNews.map((el: Article, i: number) => (
-    <NewsCard article={el} count={i} />
+    <TagStories article={el} key={i} />
   ));
 
   return (
     <div className=" bg-white min-h-screen">
       <SubPageNavBar />
-      <div className="">
-        <TagHeader tag={topic} />
-        <div className="flex flex-wrap justify-center gap-12 w-10/12 mx-auto py-8 border-t-2">
+
+      <TagHeader tag={topic} />
+      <div className="flex flex-col w-11/12 md:w-[63%] mx-auto">
+        <h1 className="border-t-[1px] py-6 md:py-8 font-semibold text-xl md:text-3xl text-black "> Recommended stories </h1>
+        <div className="flex flex-wrap justify-between">
           {recommendedNews}
         </div>
+        <div className="flex flex-wrap justify-center gap-12 py-8">
+          {newsFeed}
+        </div>
       </div>
+
       {/* <div className="flex flex-wrap w-11/12 ">{newsFeed}</div> */}
     </div>
   );
