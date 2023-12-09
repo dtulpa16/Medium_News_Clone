@@ -12,10 +12,12 @@ export default function RecommendedStories({
   article,
   key,
 }: RecommendedStoryCardProps) {
-
   return (
     <div key={key} className=" flex flex-col gap-2 w-full md:w-[48%]">
-      <img src={article.image} className="min-h-[171px] md:h-[381px] aspect-auto w-full object-cover bg-[url('https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg')]" />
+      <img
+        src={article.image}
+        className="min-h-[171px] md:h-[381px] aspect-auto w-full object-cover bg-[url('https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg')]"
+      />
       <Link href="" className="text-sm">
         {article.sourceName}
       </Link>
@@ -25,7 +27,9 @@ export default function RecommendedStories({
       <h3 className="md:line-clamp-1 xl:text-lg line-clamp-2 text-xs text-[#6B6B6B]">
         {article.body || bodyPlaceholder}
       </h3>
-      <RandomInfo date={formatDate(article.publishedAt)}/>
+      <div className="pb-4 md:pb-0">
+        <RandomInfo date={formatDate(article.publishedAt)} />
+      </div>
     </div>
   );
 }

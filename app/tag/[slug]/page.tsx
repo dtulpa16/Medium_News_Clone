@@ -41,7 +41,7 @@ export default async function TagPage({
         <div className="flex flex-wrap justify-between">
           {recommendedNews}
         </div>
-        <div className="flex flex-wrap justify-between py-6 border-t-[1px] my-8 md:my-10">
+        <div className="flex flex-wrap justify-between py-6 border-t-[1px] my-5 md:my-10">
           {newsFeed}
         </div>
       </div>

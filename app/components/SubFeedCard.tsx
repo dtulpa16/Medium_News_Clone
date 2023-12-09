@@ -2,6 +2,7 @@ import React from "react";
 import { Article } from "../lib/types";
 import Link from "next/link";
 import { formatDate } from "./NewsCard";
+import RandomInfo from "./RandomStoryInfo";
 type SubFeedCardProps = {
   article: Article;
 };
@@ -14,13 +15,20 @@ const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
         <Link href="" className="text-sm">
           {article.sourceName}
         </Link>
-        <h3 className="line-clamp-2 font-bold xl:text-xl text-md">{article.title}</h3>
-        <h3 className="md:line-clamp-1 xl:text-lg text-sm hidden">{article.body || bodyPlaceholder}</h3>
-        <h4 className="line-clamp-2 font-thin text-sm">
-          {formatDate(article.publishedAt)}
-        </h4>
+        <h3 className="line-clamp-2 font-bold xl:text-xl text-md">
+          {article.title}
+        </h3>
+        <h3 className="md:line-clamp-1 xl:text-lg text-sm hidden">
+          {article.body || bodyPlaceholder}
+        </h3>
+        <div className="pb-4 md:pb-0">
+          <RandomInfo date={formatDate(article.publishedAt)} />
+        </div>
       </div>
-      <img src={article.image} className="md:min-w-[200px] md:h-[134px] w-[100px] h-[100px] aspect-auto bg-[url('https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg')]" />
+      <img
+        src={article.image}
+        className="md:min-w-[200px] md:h-[134px] w-[100px] h-[100px] aspect-auto bg-[url('https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg')]"
+      />
     </div>
   );
 };

@@ -4,20 +4,25 @@ import { MdOutlineStar } from "react-icons/md";
 const RandomInfo = ({ date }: { date: string }) => {
   // Random number for minutes read between 3 and 30
   const minRead = Math.floor(Math.random() * (30 - 3 + 1)) + 3;
-  // Random number for days ago between 1 and 20
-  const daysAgo = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
+
+  // Random boolean to determine if the star should be displayed
+  const showStar = Math.random() < 0.5; // 50% chance to show the star
 
   return (
-    <div className="flex items-center space-x-2">
-      <span className="text-xs md:text-sm lg:text-base">
-        <MdOutlineStar className="text-yellow-500" />{" "}
-      </span>
-      <span>·</span>
-      <span className="text-xs md:text-sm lg:text-base">
+    <div className="flex items-center space-x-2 text-gray-600 text-md leading-tight">
+      {showStar && (
+        <>
+          <span className="text-yellow-500">
+            <MdOutlineStar />
+          </span>
+          <span>·</span>
+        </>
+      )}
+      <span className="text-xs ">
         {minRead} min read
       </span>
       <span>·</span>
-      <span className="text-xs md:text-sm lg:text-base">{date}</span>
+      <span className="text-xs ">{date}</span>
     </div>
   );
 };
