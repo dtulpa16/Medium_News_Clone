@@ -34,11 +34,11 @@ export default function SubPageNavBar() {
             <p className="text-sm md:block hidden">Write</p>
           </div>
           {/* Sign Up  */}
-          <button className="bg-[#1a8917] text-white text-sm md:px-3 px-2 md:py-2 py-[3px] rounded-full shadow-sm hover:bg-green-600">
+          <Link href="/sign-up" className="bg-[#1a8917] text-white text-sm md:px-3 px-2 md:py-2 py-[3px] rounded-full shadow-sm hover:bg-green-600">
             Sign up
-          </button>
+          </Link>
           {/* Sign In  */}
-          <span className="text-sm">Sign in</span>
+          <Link href="/sign-in" className="text-sm">Sign in</Link>
           <UserIcon className="h-6 w-6 text-gray-600 md:ml-auto ml-2" />
         </div>
       </div>

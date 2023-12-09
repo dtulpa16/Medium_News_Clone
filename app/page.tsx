@@ -5,7 +5,7 @@ import { HomePageProps } from "./lib/types";
 
 export default function Home({ searchParams }: HomePageProps) {
   return (
-    <main >
+    <main>
       <div className="bg-white min-h-screen pt-[83px]">
         <Navbar />
         <div className="bg-[#ffc017] xl:pl-96 md:pl-[75px] pl-4">
