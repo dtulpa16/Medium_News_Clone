@@ -36,7 +36,7 @@ export default async function TagPage({
       <SubPageNavBar />
 
       <TagHeader tag={topic} />
-      <div className="flex flex-col w-11/12 2xl:w-[65%] mx-auto">
+      <div className="flex flex-col w-11/12 2xl:w-[65%] lg:w-[75%] mx-auto">
         <h1 className="border-t-[1px] py-6 md:py-8 font-semibold text-xl md:text-3xl text-black tracking-tighter"> Recommended stories </h1>
         <div className="flex flex-wrap justify-between">
           {recommendedNews}

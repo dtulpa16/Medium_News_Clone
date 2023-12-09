@@ -13,7 +13,7 @@ export default function SubPageNavBar() {
             <div className="min-h-[19px] w-[4px] bg-black rounded-e-full rounded-s-full rounded-squeeze-bottom"></div>
           </div>
           {/* Brand  */}
-          <Link href="/" className=" text-[25px] font-bold pl-[1px] hover:cursor-pointer text-black md:mr-4">
+          <Link href="/" className=" text-[25px] font-bold pl-[3px] hover:cursor-pointer text-black md:mr-4 font-serif tracking-tighter">
             Medium
           </Link>
           {/* Search Bar  */}
@@ -29,7 +29,7 @@ export default function SubPageNavBar() {
         {/* Right tabs  */}
         <div className="flex items-center md:gap-6 gap-2">
           {/* Write  */}
-          <div className="flex items-center gap-1 mr-2">
+          <div className="flex items-center gap-1 md:mr-2">
             <PencilAltIcon className="h-6 w-6 text-gray-600" />
             <p className="text-sm md:block hidden">Write</p>
           </div>

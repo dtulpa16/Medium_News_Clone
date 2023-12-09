@@ -15,7 +15,7 @@ export default async function NewsFeedList() {
   ));
   return (
     <div className="flex flex-col pt-11 xl:gap-16 gap-8">
-      <div className=" border-zinc-300 border-solid border-b-[1px] w-full pb-10">
+      <div className=" border-zinc-300 w-full pb-10">
         <div className="ml-3 flex flex-row gap-4">
           <TrendingIcon />
           <h2 className="text-black font-semibold text-lg">
@@ -24,6 +24,7 @@ export default async function NewsFeedList() {
         </div>
         <div className="flex flex-wrap md:w-10/12 w-11/12 ">{newsFeed}</div>
       </div>
+      <div className="border-b-2 md:w-4/5 w-11/12"/>
       <div className="xl:flex xl:flex-row flex flex-col-reverse gap-8">
         <SubFeed articles={subNewsList} />
         <DiscoverTabs />

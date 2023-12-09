@@ -9,13 +9,13 @@ export default function Navbar() {
       <div className="xl:pl-96 md:pl-[75px] pl-4">
         <div className="navbar xl:w-9/12 md:pr-8 min-h-[83px] text-black ">
           <div className="navbar-start flex gap-[1px] items-center">
-            <div className="min-h-[28px] w-[28px] bg-black rounded-full"></div>
+            <div className="min-h-[26px] w-[26px] bg-black rounded-full"></div>
 
-            <div className="min-h-[27px] w-[14px] bg-black rounded-squeeze"></div>
+            <div className="min-h-[24px] w-[13px] bg-black rounded-squeeze"></div>
 
-            <div className="min-h-[26px] w-[7px] bg-black rounded-e-full rounded-s-full rounded-squeeze-bottom"></div>
+            <div className="min-h-[21px] w-[6px] bg-black rounded-e-full rounded-s-full rounded-squeeze-bottom"></div>
             <h2
-              className=" text-[28px] font-bold pl-2 hover:cursor-pointer"
+              className=" text-[20px] font-bold pl-1 hover:cursor-pointer font-serif tracking-tighter"
               onClick={() => router.push("/")}
             >
               Medium
