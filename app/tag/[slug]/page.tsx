@@ -37,7 +37,7 @@ export default async function TagPage({
 
       <TagHeader tag={topic} />
       <div className="flex flex-col w-11/12 2xl:w-[65%] mx-auto">
-        <h1 className="border-t-[1px] py-6 md:py-8 font-semibold text-xl md:text-3xl text-black "> Recommended stories </h1>
+        <h1 className="border-t-[1px] py-6 md:py-8 font-semibold text-xl md:text-3xl text-black tracking-tighter"> Recommended stories </h1>
         <div className="flex flex-wrap justify-between">
           {recommendedNews}
         </div>
@@ -45,8 +45,6 @@ export default async function TagPage({
           {newsFeed}
         </div>
       </div>
-
-      {/* <div className="flex flex-wrap w-11/12 ">{newsFeed}</div> */}
     </div>
   );
 }
