@@ -22,7 +22,7 @@ export default async function NewsFeedList() {
             Trending on Medium
           </h2>
         </div>
-        <div className="flex flex-wrap w-11/12 ">{newsFeed}</div>
+        <div className="flex flex-wrap md:w-10/12 w-11/12 ">{newsFeed}</div>
       </div>
       <div className="xl:flex xl:flex-row flex flex-col-reverse gap-8">
         <SubFeed articles={subNewsList} />
