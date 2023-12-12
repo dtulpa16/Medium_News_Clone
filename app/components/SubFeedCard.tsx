@@ -14,10 +14,13 @@ export const bodyPlaceholder =
 const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
   return (
     <div className="flex sm:justify-normal md:w-auto justify-evenly xl:h-[175px] md:h-[150px] xl:gap-6 md:gap-4 gap-6">
-      <div className="flex flex-col text-black gap-2 xl:max-w-[650px] sm:max-w-[400px] max-w-[240px]">
-        <Link href="/" className="text-sm">
-          {article.sourceName}
-        </Link>
+      <Link
+        href={article.link}
+        target="_blank"
+        rel="noreferrer"
+        className="flex flex-col text-black gap-2 xl:max-w-[650px] sm:max-w-[400px] max-w-[240px]"
+      >
+        <p className="text-sm">{article.sourceName}</p>
         <h3 className="line-clamp-2 font-bold xl:text-xl text-md">
           {article.title}
         </h3>
@@ -27,10 +30,13 @@ const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
         <div className="pb-4 md:pb-0">
           <RandomInfo date={formatDate(article.publishedAt)} />
         </div>
-      </div>
+      </Link>
       <div className="md:min-w-[200px] md:h-[134px] w-[100px] h-[100px] relative">
         <Image
-          src={article.image || "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"}
+          src={
+            article.image ||
+            "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"
+          }
           className=""
           alt="Article image"
           placeholder="blur"

@@ -13,12 +13,18 @@ type TagStoryCardProps = {
 
 export default function TagStories({ article, index }: TagStoryCardProps) {
   return (
-    <div
+    <Link
+      href={article.link}
+      target="_blank"
+      rel="noreferrer"
       className="flex flex-col justify-between gap-3 md:px-4 py-4 md:py-auto w-full sm:w-1/2 lg:w-1/2 xl:w-1/3"
     >
       <div className="relative h-[171px] md:h-[182px] w-full">
         <Image
-          src={article.image || "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"}
+          src={
+            article.image ||
+            "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"
+          }
           alt="Article image"
           placeholder="blur"
           blurDataURL={placeholder}
@@ -30,9 +36,9 @@ export default function TagStories({ article, index }: TagStoryCardProps) {
         />
       </div>
 
-      <Link href="/" className="text-sm">
+      <p className="text-sm">
         {article.sourceName}
-      </Link>
+      </p>
       <h3 className="line-clamp-2 font-bold xl:text-lg text-md text-[#242424]">
         {article.title}
       </h3>
@@ -42,6 +48,6 @@ export default function TagStories({ article, index }: TagStoryCardProps) {
       <div className="">
         <RandomInfo date={formatDate(article.publishedAt)} />
       </div>
-    </div>
+    </Link>
   );
 }

@@ -31,17 +31,20 @@ export default function NewsCard({ article, count }: NewsCardProps) {
         {count + 1 < 10 && 0}
         {count + 1}
       </div>
-      <div className="flex flex-col overflow-auto text-black gap-2">
-        <Link href="/" className="text-sm">
-          {article.sourceName}
-        </Link>
+      <Link
+        href={article.link}
+        target="_blank"
+        rel="noreferrer"
+        className="flex flex-col overflow-auto text-black gap-2"
+      >
+        <p className="text-sm">{article.sourceName}</p>
         <h3 className="line-clamp-2 font-bold text-lg max-w-[320px]">
           {article.title}
         </h3>
         <div>
           <RandomInfo date={formatDate(article.publishedAt)} />
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

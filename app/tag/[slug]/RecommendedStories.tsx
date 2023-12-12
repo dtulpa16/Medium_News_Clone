@@ -15,10 +15,21 @@ export default function RecommendedStories({
   index,
 }: RecommendedStoryCardProps) {
   return (
-    <div className=" flex flex-col gap-2 w-full md:w-[48%]">
-      <div className="relative min-h-[171px] md:h-[381px] w-full">
+    <Link
+      href={article.link}
+      target="_blank"
+      rel="noreferrer"
+      className=" flex flex-col gap-2 w-full md:w-[48%]"
+    >
+      <div
+        rel="noreferrer"
+        className="relative min-h-[171px] md:h-[381px] w-full"
+      >
         <Image
-          src={article.image || "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"}
+          src={
+            article.image ||
+            "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"
+          }
           className="rounded-lg"
           alt="Article image"
           placeholder="blur"
@@ -31,9 +42,7 @@ export default function RecommendedStories({
         />
       </div>
 
-      <Link href="/" className="text-sm">
-        {article.sourceName}
-      </Link>
+      <p className="text-sm">{article.sourceName}</p>
       <h3 className="line-clamp-2 font-bold xl:text-2xl text-xl text-[#242424]">
         {article.title}
       </h3>
@@ -43,6 +52,6 @@ export default function RecommendedStories({
       <div className="pb-4 md:pb-0">
         <RandomInfo date={formatDate(article.publishedAt)} />
       </div>
-    </div>
+    </Link>
   );
 }
