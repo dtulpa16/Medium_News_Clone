@@ -15,7 +15,7 @@ export default function RecommendedStories({
   index,
 }: RecommendedStoryCardProps) {
   return (
-    <div key={index} className=" flex flex-col gap-2 w-full md:w-[48%]">
+    <div className=" flex flex-col gap-2 w-full md:w-[48%]">
       <div className="relative min-h-[171px] md:h-[381px] w-full">
         <Image
           src={article.image || "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"}

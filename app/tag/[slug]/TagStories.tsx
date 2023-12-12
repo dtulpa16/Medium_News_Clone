@@ -8,13 +8,12 @@ import { placeholder } from "@/app/lib/placeholderimg";
 import Image from "next/image";
 type TagStoryCardProps = {
   article: Article;
-  key: number;
+  index: number;
 };
 
-export default function TagStories({ article, key }: TagStoryCardProps) {
+export default function TagStories({ article, index }: TagStoryCardProps) {
   return (
     <div
-      key={key}
       className="flex flex-col justify-between gap-3 md:px-4 py-4 md:py-auto w-full sm:w-1/2 lg:w-1/2 xl:w-1/3"
     >
       <div className="relative h-[171px] md:h-[182px] w-full">

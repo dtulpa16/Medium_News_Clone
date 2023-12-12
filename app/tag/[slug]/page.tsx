@@ -23,12 +23,12 @@ export default async function TagPage({
   //Recommended Stories
   const recommendedStories = categoryNews.data.slice(0, 2);
   const recommendedNews = recommendedStories.map((el: Article, i: number) => (
-    <RecommendedStories key={i} article={el} index={i} />
+    <RecommendedStories key={el._id || i} article={el} index={i} />
   ));
   // Main Stories
   const mainCategoryNews = categoryNews.data.slice(3, categoryNews.data.length);
   const newsFeed = mainCategoryNews.map((el: Article, i: number) => (
-    <TagStories article={el} key={i} />
+    <TagStories key={el._id || i} article={el} index={i} />
   ));
 
   return (
