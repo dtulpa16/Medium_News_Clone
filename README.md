@@ -1,5 +1,5 @@
 # Next.js & TailwindCSS Medium Clone 
-## [Check it out here!](https://summittracker.netlify.app/)
+## [Check it out here!](https://dtulpa-medium-clone.netlify.app/)
 
 This Medium clone is built with Next.js and styled using only Tailwind css! I chose to make a clone of Medium because I really enjoy the layout of their platform & I wanted to see if I could accomplish a similar flow using only Tailwindcss
 
