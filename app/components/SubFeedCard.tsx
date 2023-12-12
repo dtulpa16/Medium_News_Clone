@@ -14,7 +14,7 @@ export const bodyPlaceholder =
 const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
   return (
     <div className="flex xl:h-[175px] md:h-[150px] xl:gap-6 md:gap-4 gap-6">
-      <div className="flex flex-col text-black gap-2 xl:max-w-[650px] md:max-w-[400px] max-w-[222px]">
+      <div className="flex flex-col text-black gap-2 xl:max-w-[650px] md:max-w-[400px] max-w-[240px]">
         <Link href="/" className="text-sm">
           {article.sourceName}
         </Link>
@@ -31,7 +31,7 @@ const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
       <div className="md:min-w-[200px] md:h-[134px] w-[100px] h-[100px] relative">
         <Image
           src={article.image || "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"}
-          className="rounded-lg"
+          className=""
           alt="Article image"
           placeholder="blur"
           blurDataURL={placeholder}
