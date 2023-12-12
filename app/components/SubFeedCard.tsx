@@ -3,7 +3,7 @@ import { Article } from "../lib/types";
 import Link from "next/link";
 import { formatDate } from "./NewsCard";
 import RandomInfo from "./RandomStoryInfo";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { placeholder } from "../lib/placeholderimg";
 type SubFeedCardProps = {
   article: Article;

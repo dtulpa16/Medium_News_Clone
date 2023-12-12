@@ -5,7 +5,7 @@ import { bodyPlaceholder } from "@/app/components/SubFeedCard";
 import { formatDate } from "@/app/components/NewsCard";
 import RandomInfo from "@/app/components/RandomStoryInfo";
 import { placeholder } from "@/app/lib/placeholderimg";
-import Image from "next/image";
+import Image from "next/legacy/image";
 type TagStoryCardProps = {
   article: Article;
   key: number;

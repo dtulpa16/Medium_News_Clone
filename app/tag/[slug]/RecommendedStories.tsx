@@ -5,7 +5,7 @@ import { placeholder } from "@/app/lib/placeholderimg";
 import { Article } from "@/app/lib/types";
 import Link from "next/link";
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 type RecommendedStoryCardProps = {
   article: Article;
   key: number;
