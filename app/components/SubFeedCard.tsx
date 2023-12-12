@@ -3,7 +3,7 @@ import { Article } from "../lib/types";
 import Link from "next/link";
 import { formatDate } from "./NewsCard";
 import RandomInfo from "./RandomStoryInfo";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { placeholder } from "../lib/placeholderimg";
 type SubFeedCardProps = {
   article: Article;
@@ -30,13 +30,16 @@ const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
       </div>
       <div className="md:min-w-[200px] md:h-[134px] w-[100px] h-[100px] relative">
         <Image
-          src={article.image}
-          layout="fill"
-          objectFit="cover"
+          src={article.image || "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"}
           className="rounded-lg"
           alt="Article image"
           placeholder="blur"
           blurDataURL={placeholder}
+          fill
+          sizes="(min-width: 768px) 200px, 100vw"
+          style={{
+            objectFit: "cover",
+          }}
         />
       </div>
     </div>

@@ -5,28 +5,32 @@ import { placeholder } from "@/app/lib/placeholderimg";
 import { Article } from "@/app/lib/types";
 import Link from "next/link";
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 type RecommendedStoryCardProps = {
   article: Article;
-  key: number;
+  index: number;
 };
 export default function RecommendedStories({
   article,
-  key,
+  index,
 }: RecommendedStoryCardProps) {
   return (
-    <div key={key} className=" flex flex-col gap-2 w-full md:w-[48%]">
+    <div key={index} className=" flex flex-col gap-2 w-full md:w-[48%]">
       <div className="relative min-h-[171px] md:h-[381px] w-full">
         <Image
-          src={article.image}
-          layout="fill"
-          objectFit="cover"
+          src={article.image || "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"}
           className="rounded-lg"
           alt="Article image"
           placeholder="blur"
           blurDataURL={placeholder}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          style={{
+            objectFit: "cover",
+          }}
         />
       </div>
+
       <Link href="/" className="text-sm">
         {article.sourceName}
       </Link>

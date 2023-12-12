@@ -5,7 +5,7 @@ import { bodyPlaceholder } from "@/app/components/SubFeedCard";
 import { formatDate } from "@/app/components/NewsCard";
 import RandomInfo from "@/app/components/RandomStoryInfo";
 import { placeholder } from "@/app/lib/placeholderimg";
-import Image from "next/legacy/image";
+import Image from "next/image";
 type TagStoryCardProps = {
   article: Article;
   key: number;
@@ -19,14 +19,18 @@ export default function TagStories({ article, key }: TagStoryCardProps) {
     >
       <div className="relative h-[171px] md:h-[182px] w-full">
         <Image
-          src={article.image}
-          layout="fill"
-          objectFit="cover"
+          src={article.image || "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"}
           alt="Article image"
           placeholder="blur"
           blurDataURL={placeholder}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          style={{
+            objectFit: "cover",
+          }}
         />
       </div>
+
       <Link href="/" className="text-sm">
         {article.sourceName}
       </Link>

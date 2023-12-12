@@ -11,7 +11,7 @@ export default async function NewsFeedList() {
   const mainNewsList = newsList.data.slice(0, 6);
   const subNewsList = newsList.data.slice(7, newsList.data.length);
   const newsFeed = mainNewsList.map((el: Article, i: number) => (
-    <NewsCard article={el} count={i} />
+    <NewsCard key={i} article={el} count={i}  />
   ));
   return (
     <div className="flex flex-col pt-11 xl:gap-16 gap-8">

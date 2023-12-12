@@ -8,6 +8,12 @@ const nextConfig = {
         port: '',
         pathname: '/proxy/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'tvnewsroom.org',
+        port: '',
+        pathname: '/wp-content/**',
+      },
     ],
   },
   experimental: {

@@ -26,7 +26,7 @@ export const formatDate = (dateStr: string) => {
 };
 export default function NewsCard({ article, count }: NewsCardProps) {
   return (
-    <div key={count} className="xl:w-1/3 md:w-1/2 w-full flex gap-5 p-2 py-3 tracking-tight">
+    <div className="xl:w-1/3 md:w-1/2 w-full flex gap-5 p-2 py-3 tracking-tight">
       <div className=" font-semibold text-gray-200 text-4xl -mt-1">
         {count + 1 < 10 && 0}
         {count + 1}
