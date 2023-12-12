@@ -12,7 +12,7 @@ export default function Home({ searchParams }: HomePageProps) {
         <div className="bg-[#ffc017] xl:pl-96 md:pl-[75px] pl-6">
           <HomeBanner />
         </div>
-        <div className="bg-white xl:pl-96 md:pl-[75px] pl-4">
+        <div className="bg-white 2xl:pl-96 lg:pl-[75px] md:pl-[50px] md:w-auto w-[95%] md:mx-0 mx-auto">
           <NewsFeedList />
         </div>
       </div>
