@@ -1,9 +1,11 @@
 import { formatDate } from "@/app/components/NewsCard";
 import RandomInfo from "@/app/components/RandomStoryInfo";
 import { bodyPlaceholder } from "@/app/components/SubFeedCard";
+import { placeholder } from "@/app/lib/placeholderimg";
 import { Article } from "@/app/lib/types";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 type RecommendedStoryCardProps = {
   article: Article;
   key: number;
@@ -14,11 +16,18 @@ export default function RecommendedStories({
 }: RecommendedStoryCardProps) {
   return (
     <div key={key} className=" flex flex-col gap-2 w-full md:w-[48%]">
-      <img
-        src={article.image}
-        className="min-h-[171px] md:h-[381px] aspect-auto w-full object-cover bg-[url('https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg')]"
-      />
-      <Link href="" className="text-sm">
+      <div className="relative min-h-[171px] md:h-[381px] w-full">
+        <Image
+          src={article.image}
+          layout="fill"
+          objectFit="cover"
+          className="rounded-lg"
+          alt="Article image"
+          placeholder="blur"
+          blurDataURL={placeholder}
+        />
+      </div>
+      <Link href="/" className="text-sm">
         {article.sourceName}
       </Link>
       <h3 className="line-clamp-2 font-bold xl:text-2xl text-xl text-[#242424]">

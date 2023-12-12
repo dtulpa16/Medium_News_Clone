@@ -15,7 +15,7 @@ export default function Navbar() {
 
             <div className="min-h-[21px] w-[6px] bg-black rounded-e-full rounded-s-full rounded-squeeze-bottom"></div>
             <h2
-              className=" text-[20px] font-bold pl-1 hover:cursor-pointer font-serif tracking-tighter"
+              className=" text-[29px] font-bold pl-1 hover:cursor-pointer font-serif tracking-tighter"
               onClick={() => router.push("/")}
             >
               Medium
