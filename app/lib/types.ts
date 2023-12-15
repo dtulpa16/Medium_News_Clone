@@ -13,3 +13,13 @@ export type Article = {
 export type HomePageProps = {
   searchParams: Record<string, string> | null | undefined;
 };
+export type PlanFeature = {
+  text: string;
+}
+
+export type Plan = {
+  title: string;
+  price: string;
+  features: PlanFeature[];
+  highlighted?: boolean;
+}
