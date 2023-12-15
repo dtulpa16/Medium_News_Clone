@@ -25,7 +25,7 @@ export default function Navbar() {
             {/* Navigation Links */}
             <ul className="md:gap-6 px-1 lg:flex hidden md:pr-4">
               <li className="underline-animation" onClick={() => router.push("/")}>Our Story</li>
-              <li className="underline-animation" onClick={() => router.push("/")}>Membership</li>
+              <li className="underline-animation" onClick={() => router.push("/?showMembership=true")}>Membership</li>
               <li className="underline-animation" onClick={() => router.push("/")}>Write</li>
               {!userId && <li className="underline-animation" onClick={() => router.push("/sign-in")}>Sign In</li>}
             </ul>

@@ -4,10 +4,12 @@ import PlanCard from "./PlanCard";
 import Link from "next/link";
 export default function MembershipModal() {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="relative bg-white p-8 rounded-lg max-w-4xl mx-auto space-y-4">
-        <h2 className="text-4xl font-serif font-bold mb-6">Membership plans</h2>
-        <div className="flex justify-center space-x-4">
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-20 flex justify-center items-center py-8">
+      <div className="relative bg-white p-8 rounded-lg max-w-4xl mx-auto space-y-4 z-30">
+        <h2 className="text-4xl font-serif font-bold mb-6 text-black">
+          Membership plans
+        </h2>
+        <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
           {plans.map((plan, index) => (
             <PlanCard key={index} {...plan} />
           ))}

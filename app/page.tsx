@@ -1,9 +1,11 @@
 import HomeBanner from "./components/HomeBanner";
 import Navbar from "./components/Navbar";
 import NewsFeedList from "./components/NewsFeedList";
+import MembershipModal from "./components/modals/MembershipModal/MembershipModal";
 import { HomePageProps } from "./lib/types";
 
 export default function Home({ searchParams }: HomePageProps) {
+  const showMembership = searchParams?.showMembership;
   return (
     <main>
       <div className=" min-h-screen pt-[83px] bg-white">
@@ -17,6 +19,7 @@ export default function Home({ searchParams }: HomePageProps) {
           <NewsFeedList />
         </div>
       </div>
+      {showMembership && <MembershipModal/>}
     </main>
   );
 }
