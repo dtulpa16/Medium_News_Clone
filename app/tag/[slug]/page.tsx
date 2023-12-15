@@ -1,10 +1,11 @@
 import NewsCard from "@/app/components/NewsCard";
 import { Article } from "@/app/lib/types";
-import React from "react";
+import React, { Suspense } from "react";
 import RecommendedStories from "./RecommendedStories";
 import SubPageNavBar from "@/app/components/SubPageNavBar";
 import TagHeader from "./TagHeader";
 import TagStories from "./TagStories";
+import Loading from "./loading";
 
 export default async function TagPage({
   params,
@@ -36,15 +37,20 @@ export default async function TagPage({
       <SubPageNavBar />
 
       <TagHeader tag={topic} />
-      <div className="flex flex-col w-11/12 2xl:w-[65%] lg:w-[75%] mx-auto">
-        <h1 className="border-t-[1px] py-6 md:py-8 font-semibold text-xl md:text-3xl text-black tracking-tighter"> Recommended stories </h1>
-        <div className="flex flex-wrap justify-between">
-          {recommendedNews}
+      <Suspense fallback={<Loading />}>
+        <div className="flex flex-col w-11/12 2xl:w-[65%] lg:w-[75%] mx-auto">
+          <h1 className="border-t-[1px] py-6 md:py-8 font-semibold text-xl md:text-3xl text-black tracking-tighter">
+            {" "}
+            Recommended stories{" "}
+          </h1>
+          <div className="flex flex-wrap justify-between">
+            {recommendedNews}
+          </div>
+          <div className="flex flex-wrap justify-between py-6 border-t-[1px] my-5 md:my-10">
+            {newsFeed}
+          </div>
         </div>
-        <div className="flex flex-wrap justify-between py-6 border-t-[1px] my-5 md:my-10">
-          {newsFeed}
-        </div>
-      </div>
+      </Suspense>
     </div>
   );
 }
