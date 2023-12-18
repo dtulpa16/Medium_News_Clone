@@ -8,8 +8,8 @@ export default function Navbar() {
   const {userId} = useAuth();
   return (
     <div className="fixed top-0 w-full z-10 bg-[#ffc017]">
-      <div className="xl:pl-96 md:pl-[75px] pl-4">
-        <div className="navbar xl:w-9/12 md:pr-8 min-h-[83px] text-black">
+      <div className="2xl:pl-96 xl:pl-[125px] md:pl-[75px] pl-4">
+        <div className="navbar xl:w-9/12 lg:pr-8 min-h-[83px] text-black">
           <div className="navbar-start flex gap-[1px] items-center">
             {/* Logo elements */}
             <div className="min-h-[26px] w-[26px] bg-black rounded-full"></div>
@@ -23,7 +23,7 @@ export default function Navbar() {
 
           <div className="navbar-end">
             {/* Navigation Links */}
-            <ul className="md:gap-6 px-1 lg:flex hidden md:pr-4">
+            <ul className="md:gap-6 px-1 sm:flex sm:gap-4 sm:pr-4 hidden md:pr-4">
               <li className="underline-animation" onClick={() => router.push("/")}>Our Story</li>
               <li className="underline-animation" onClick={() => router.push("/?showMembership=true")}>Membership</li>
               <li className="underline-animation" onClick={() => router.push("/")}>Write</li>
