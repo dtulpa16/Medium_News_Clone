@@ -25,7 +25,7 @@ export default function Navbar() {
               Medium
             </h2>
           </div>
-          <div className="navbar-end">
+          <div className="navbar-end w-full">
           {/* Hamburger Menu Icon */}
           {/* <div className="sm:hidden flex items-center" onClick={toggleMenu}>
             <svg className="w-6 h-6 text-black" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,7 +45,6 @@ export default function Navbar() {
           )} */}
             {/* Navigation Links */}
             <ul className="md:gap-6 px-1 sm:flex sm:gap-4 sm:pr-4 hidden md:pr-4">
-              <li className="underline-animation" onClick={() => router.push("/")}>Our Story</li>
               <li className="underline-animation" onClick={() => router.push("/?showMembership=true")}>Membership</li>
               <li className="underline-animation" onClick={() => router.push("/")}>Write</li>
               {!userId && <li className="underline-animation" onClick={() => router.push("/sign-in")}>Sign In</li>}
