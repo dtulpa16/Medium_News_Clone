@@ -1,11 +1,16 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { UserButton } from "@clerk/nextjs";
 import { useAuth } from "@clerk/nextjs";
 export default function Navbar() {
   const router = useRouter();
   const {userId} = useAuth();
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <div className="fixed top-0 w-full z-10 bg-[#ffc017]">
       <div className="2xl:pl-96 xl:pl-[125px] md:pl-[75px] pl-4">
@@ -20,8 +25,24 @@ export default function Navbar() {
               Medium
             </h2>
           </div>
-
           <div className="navbar-end">
+          {/* Hamburger Menu Icon */}
+          {/* <div className="sm:hidden flex items-center" onClick={toggleMenu}>
+            <svg className="w-6 h-6 text-black" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d={!isMenuOpen ? "M4 6h16M4 12h16M4 18h16" : "M6 18L18 6M6 6l12 12"} />
+            </svg>
+          </div> */}
+          {/* Mobile Dropdown Menu */}
+          {/* {isMenuOpen && (
+            <div className="absolute top-full left-0 w-full bg-[#ffc017] shadow-md py-4 flex flex-col items-center">
+              <ul>
+              <li className="underline-animation" onClick={() => router.push("/")}>Our Story</li>
+              <li className="underline-animation" onClick={() => router.push("/?showMembership=true")}>Membership</li>
+              <li className="underline-animation" onClick={() => router.push("/")}>Write</li>
+              {!userId && <li className="underline-animation" onClick={() => router.push("/sign-in")}>Sign In</li>}
+              </ul>
+            </div>
+          )} */}
             {/* Navigation Links */}
             <ul className="md:gap-6 px-1 sm:flex sm:gap-4 sm:pr-4 hidden md:pr-4">
               <li className="underline-animation" onClick={() => router.push("/")}>Our Story</li>

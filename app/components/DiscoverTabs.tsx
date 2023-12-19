@@ -2,14 +2,13 @@ import Link from "next/link";
 import React from "react";
 
 const Tabs: { label: string; value: string }[] = [
-  { label: "Programming", value: "science_and_technology" },
-  { label: "Sports", value: "sport" },
-  { label: "World News", value: "world" },
+  { label: "Technology", value: "technology" },
+  { label: "Science", value: "science" },
+  { label: "Sports", value: "sports" },
+  { label: "World News", value: "general" },
   { label: "Business", value: "business" },
-  { label: "Education", value: "education" },
   { label: "Entertainment", value: "entertainment" },
   { label: "Health", value: "health" },
-  { label: "Travel", value: "travel" },
 ];
 
 export default function DiscoverTabs() {

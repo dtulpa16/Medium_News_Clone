@@ -10,6 +10,20 @@ export type Article = {
   sourceName: string;
   title: string;
 };
+export function convertToArticle(apiArticle: any): Article {
+  return {
+    _id: apiArticle.published_at,
+    hasBody: true,
+    title: apiArticle.title,
+    body: apiArticle.description,
+    link: apiArticle.url,
+    sourceName: apiArticle.source,
+    image: apiArticle.image,
+    publishedAt: apiArticle.published_at,
+    publishedTimestamp: apiArticle.published_at,
+    shortLink:apiArticle.url
+  };
+}
 export type HomePageProps = {
   searchParams: Record<string, string> | null | undefined;
 };
