@@ -1,4 +1,4 @@
-function getRandomImageUrl() {
+export function getRandomImageUrl() {
     const imageUrls = [
       "https://i0.wp.com/vfxdownload.com/wp-content/uploads/2020/09/IMG_Preview-12.jpg?fit=590%2C300&ssl=1",
       "https://css-tricks.com/wp-content/uploads/2021/04/wpn-20210416.jpg",

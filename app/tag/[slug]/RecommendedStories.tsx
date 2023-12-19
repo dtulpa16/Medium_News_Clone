@@ -6,6 +6,7 @@ import { Article } from "@/app/lib/types";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { getRandomImageUrl } from "@/app/lib/getRandomImageUrl";
 type RecommendedStoryCardProps = {
   article: Article;
   index: number;
@@ -26,10 +27,7 @@ export default function RecommendedStories({
         className="relative min-h-[171px] md:h-[381px] w-full"
       >
         <Image
-          src={
-            article.image ||
-            "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"
-          }
+          src={article.image || getRandomImageUrl()}
           className="rounded-lg"
           alt="Article image"
           placeholder="blur"

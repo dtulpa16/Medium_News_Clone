@@ -6,6 +6,7 @@ import { formatDate } from "@/app/components/NewsCard";
 import RandomInfo from "@/app/components/RandomStoryInfo";
 import { placeholder } from "@/app/lib/placeholderimg";
 import Image from "next/image";
+import { getRandomImageUrl } from "@/app/lib/getRandomImageUrl";
 type TagStoryCardProps = {
   article: Article;
   index: number;
@@ -21,10 +22,7 @@ export default function TagStories({ article, index }: TagStoryCardProps) {
     >
       <div className="relative h-[171px] md:h-[182px] w-full">
         <Image
-          src={
-            article.image ||
-            "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"
-          }
+          src={article.image || getRandomImageUrl()}
           alt="Article image"
           placeholder="blur"
           blurDataURL={placeholder}

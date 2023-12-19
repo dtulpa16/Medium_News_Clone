@@ -5,6 +5,7 @@ import { formatDate } from "./NewsCard";
 import RandomInfo from "./RandomStoryInfo";
 import Image from "next/image";
 import { placeholder } from "../lib/placeholderimg";
+import { getRandomImageUrl } from "../lib/getRandomImageUrl";
 type SubFeedCardProps = {
   article: Article;
   key: number;
@@ -33,10 +34,7 @@ const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
       </Link>
       <div className="md:min-w-[200px] md:h-[134px] w-[100px] h-[100px] relative">
         <Image
-          src={
-            article.image ||
-            "https://tvnewsroom.org/wp-content/uploads/2021/05/GB-News-2.jpg"
-          }
+          src={article.image || getRandomImageUrl()}
           className=""
           alt="Article image"
           placeholder="blur"
