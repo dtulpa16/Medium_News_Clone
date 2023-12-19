@@ -1,5 +1,4 @@
 import Navbar from "@/app/components/Navbar";
-import Modal from "@/app/components/modals/ModalLayout";
 import { SignIn } from "@clerk/nextjs";
 import { neobrutalism } from "@clerk/themes";
 
