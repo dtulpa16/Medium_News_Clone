@@ -23,6 +23,7 @@ export async function GET(request: Request) {
     return acc;
   }, []);
   data = data.length > 0 ? data : []
+  console.log(data)
   return Response.json({ data })
   // const headersList = headers()
   // const { searchParams } = new URL(request.url);

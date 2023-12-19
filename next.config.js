@@ -4,6 +4,30 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'i0.wp.com',
+        port: '',
+        pathname: '**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'css-tricks.com',
+        port: '',
+        pathname: '/wp-content/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.mytemplatesshop.com',
+        port: '',
+        pathname: '/wp-content/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.thestreet.com',
+        port: '',
+        pathname: '/.image/**',
+      },
+      {
+        protocol: 'https',
         hostname: '**.googleusercontent.com',
         port: '',
         pathname: '/proxy/**',
