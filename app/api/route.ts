@@ -6,14 +6,14 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const category = headersList.get("category") || "general";
   const page = searchParams.get("page") || "0";
-  const limit = searchParams.get("limit") || "30";
+  const limit = searchParams.get("limit") || "20";
   
   debugger;
   const res = await fetch(
     `http://api.mediastack.com/v1/news?access_key=${process.env.NEWS_API_KEY}&categories=${category}&languages=en&country=us&offset=${page}&limit=${limit}`
   );
   const json = await res.json();
-  const mappedArticles: Article[] = await json.data.map(convertToArticle);
+  const mappedArticles: Article[] = json.data.map(convertToArticle);
   let data: Article[] = mappedArticles.reduce((acc: Article[], current: Article) => {
     // Find if there's an article in the accumulator with the same title
     const isDuplicate = acc.some(item => item.title === current.title);
@@ -23,7 +23,6 @@ export async function GET(request: Request) {
     return acc;
   }, []);
   data = data.length > 0 ? data : []
-  console.log(data)
   return Response.json({ data })
   // const headersList = headers()
   // const { searchParams } = new URL(request.url);
