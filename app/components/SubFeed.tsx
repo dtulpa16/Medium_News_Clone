@@ -6,7 +6,7 @@ type SubFeedProps = {
 };
 const SubFeed: React.FC<SubFeedProps> = ({ articles }) => {
   return (
-    <div className="flex flex-col xl:gap-9 gap-7 relative">
+    <div className="flex flex-col gap-7">
       {articles.map((el, i) => (
         <SubFeedCard article={el} key={i} />
       ))}
