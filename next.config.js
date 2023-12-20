@@ -3,6 +3,14 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
+        protocol: "https",
+        hostname: "**",
+      },
+      {
+        protocol: "http",
+        hostname: "**",
+      },
+      {
         protocol: 'https',
         hostname: 'i0.wp.com',
         port: '',
@@ -56,14 +64,7 @@ const nextConfig = {
         port: '',
         pathname: '/bs/**',
       },
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-      {
-        protocol: "http",
-        hostname: "**",
-      },
+      
 
     ],
   },

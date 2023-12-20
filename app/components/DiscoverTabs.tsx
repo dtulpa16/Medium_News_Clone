@@ -13,16 +13,16 @@ const Tabs: { label: string; value: string }[] = [
 
 export default function DiscoverTabs() {
   return (
-    <div className="md:flex flex-col gap-3">
+    <div className="md:flex flex-col gap-3 sm:w-[60%] sm:m-0 w-full m-auto relative">
       <h4 className="font-bold text-black text-lg mb-4 md:mb-0">
         Discover more of what matters to you
       </h4>
-      <div className="flex gap-3 flex-wrap relative md:w-4/6 w-full">
+      <div className="flex gap-3 flex-wrap relative md:w-4/6 ld:max-w-[375px]">
         {Tabs.map((el, i) => (
           <Link
             href={`/tag/${el.value}?value=${el.label}`}
             key={i}
-            className=" text-black text-sm p-3 px-4 rounded-full hover:cursor-pointer bg-[#f2f2f2]"
+            className=" text-black text-xs sm:text-sm p-3 px-4 rounded-full hover:cursor-pointer bg-[#f2f2f2]"
           >
             {el.label}
           </Link>
