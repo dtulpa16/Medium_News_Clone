@@ -1,4 +1,5 @@
 import { Plan } from "@/app/lib/types";
+import Link from "next/link";
 
 const PlanCard = ({ title, price, features, highlighted } : Plan) => {
     return (
@@ -6,9 +7,9 @@ const PlanCard = ({ title, price, features, highlighted } : Plan) => {
         {highlighted && <div className="text-yellow-400 text-2xl absolute top-4 right-4"></div>}
         <h3 className="text-xl md:text-2xl font-semibold mb-2">{title}</h3>
         <p className="text-md md:text-lg font-medium text-gray-700 mb-4">{price}</p>
-        <button className="bg-green-600 text-white font-bold py-2 px-4 rounded-full hover:bg-green-700 transition duration-300 ease-in-out mb-6">
+        <Link href="/sign-up" className="bg-green-600 text-white font-bold py-2 px-4 rounded-full hover:bg-green-700 transition duration-300 ease-in-out mb-6">
           Get started
-        </button>
+        </Link>
         <ul>
           {features.map((feature, index) => (
             <li key={index} className="flex items-center text-sm text-gray-900 mb-1">

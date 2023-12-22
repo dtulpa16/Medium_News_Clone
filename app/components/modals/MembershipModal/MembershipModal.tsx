@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function MembershipModal() {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-20 flex justify-center items-center py-8">
-      <div className="relative bg-white p-8 rounded-lg max-w-4xl mx-auto space-y-4 z-30">
+      <div className="relative bg-white p-8 py-12 rounded-lg max-w-4xl mx-auto space-y-4 z-30 max-h-screen overflow-y-scroll sm:overflow-y-auto">
         <h2 className="text-4xl font-serif font-bold mb-6 text-black">
           Membership plans
         </h2>
