@@ -13,7 +13,7 @@ const Tabs: { label: string; value: string }[] = [
 
 export default function DiscoverTabs() {
   return (
-    <div className="md:flex flex-col gap-3 sm:w-[60%] sm:m-0 w-full m-auto relative">
+    <div className="md:flex flex-col gap-3 sm:w-10/12 sm:m-0 w-full m-auto relative">
       <h4 className="font-bold text-black text-lg mb-4 md:mb-0">
         Discover more of what matters to you
       </h4>
