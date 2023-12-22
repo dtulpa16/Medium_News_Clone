@@ -25,7 +25,7 @@ export default async function NewsFeedList() {
         <div className="flex flex-wrap md:w-10/12 w-11/12 ">{newsFeed}</div>
       </div>
       <div className="border-b-2 md:w-4/5 w-11/12" />
-      <div className="2xl:flex lg:flex-row flex md:justify-between flex-col-reverse gap-24 gap-y-6 w-full">
+      <div className="flex flex-col-reverse lg:flex-row gap-6 lg:gap-24 w-full">
         <SubFeed articles={subNewsList} />
         <DiscoverTabs />
       </div>
