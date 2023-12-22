@@ -35,7 +35,7 @@ export default function NewsCard({ article, count }: NewsCardProps) {
         href={article.link}
         target="_blank"
         rel="noreferrer"
-        className="flex flex-col overflow-auto text-black gap-2"
+        className="flex flex-col overflow-auto text-black gap-2 overflow-y-hidden"
       >
         <p className="text-sm">{article.sourceName}</p>
         <h3 className="line-clamp-2 font-bold text-lg max-w-[320px]">

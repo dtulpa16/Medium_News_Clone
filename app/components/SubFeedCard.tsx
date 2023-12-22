@@ -14,7 +14,7 @@ export const bodyPlaceholder =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 const SubFeedCard: React.FC<SubFeedCardProps> = ({ article }) => {
   return (
-    <div className="flex sm:justify-normal md:w-full justify-evenly xl:h-[175px] xl:full md:h-[150px] xl:gap-6 md:gap-4 gap-6">
+    <div className="w-full flex sm:justify-normal md:w-full justify-evenly xl:h-[175px] xl:full md:h-[150px] xl:gap-6 md:gap-4 gap-6">
       <Link
         href={article.link}
         target="_blank"
