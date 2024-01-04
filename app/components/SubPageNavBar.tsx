@@ -1,6 +1,7 @@
 import React from "react";
 import { SearchIcon, PencilAltIcon, UserIcon } from "@heroicons/react/outline";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 export default function SubPageNavBar() {
   return (
     <nav className="bg-white shadow">
@@ -22,9 +23,14 @@ export default function SubPageNavBar() {
           {/* Search Bar  */}
           <div className="md:flex items-center bg-[#F9F9F9] rounded-full pl-3 pr-5 min-h-[40px] hidden">
             <SearchIcon className="h-6 w-6 text-gray-500 mr-2" />
-            <form action={async(data:FormData)=>{
-                let searchQuery : string = data.get("search")?.toString() || "general"
-            }}>
+            <form
+              action={async (data: FormData) => {
+                "use server";
+                let searchQuery: string =
+                  data.get("search")?.toString() || "general";
+                redirect(`/search/${searchQuery}?value=${searchQuery}`);
+              }}
+            >
               <input
                 className="bg-[#F9F9F9] outline-none text-sm placeholder-gray-500 placeholder:font-thin placeholder:text-md"
                 type="text"
