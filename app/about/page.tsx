@@ -31,7 +31,7 @@ export default function About() {
               for thoughtful conversation more than drive-by takes, and
               substance over packaging.
             </p>
-            <p className="leading-[32px] text-[21px] font-serif mb-4 p-2 bg-[#505050]">
+            <p className="tracking-[-0.009em] leading-[40px] text-[28px] font-light font-serif mb-4 p-2 bg-[#505050]">
               Ultimately, our goal is to deepen our collective understanding of
               the world through the power of writing.
             </p>

@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 export default function SubPageNavBar() {
   return (
     <nav className="bg-white shadow">
-      <div className="w-[97%] mx-auto min-h-[57px] flex justify-between items-center">
+      <div className="w-[97%] mx-auto min-h-[83px] flex justify-between items-center">
         <div className="content-start flex gap-[1px] items-center align-middle ">
           {/* Icon  */}
           <div className="flex gap-[1px] items-center">

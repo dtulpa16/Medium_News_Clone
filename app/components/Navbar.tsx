@@ -30,7 +30,7 @@ export default function Navbar() {
             {/* Navigation Links */}
             <ul className="md:gap-6 px-1 sm:flex sm:gap-4 sm:pr-4 hidden md:pr-4">
               <li className="underline-animation" onClick={() => router.push("/?showMembership=true")}>Membership</li>
-              <li className="underline-animation" onClick={() => router.push("/")}>Write</li>
+              <li className="underline-animation" onClick={() => router.push("/about")}>Our Story</li>
               {!userId && <li className="underline-animation" onClick={() => router.push("/sign-in")}>Sign In</li>}
             </ul>
 
@@ -54,7 +54,7 @@ export default function Navbar() {
           {isMenuOpen && (
             <div className="absolute top-full left-0 w-full bg-[#ffc017] shadow-md py-4 flex flex-col items-center text-center font-semibold text-lg">
               <ul>
-              <li className="underline-animation" onClick={() => router.push("/")}>Our Story</li>
+              <li className="underline-animation" onClick={() => router.push("/about")}>Our Story</li>
               <li className="underline-animation" onClick={() => router.push("/?showMembership=true")}>Membership</li>
               {!userId && <li className="underline-animation" onClick={() => router.push("/sign-in")}>Sign In</li>}
               {!userId && <li className="underline-animation" onClick={() => router.push("/sign-in")}>Sign Up</li>}
