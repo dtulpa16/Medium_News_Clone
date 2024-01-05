@@ -56,8 +56,8 @@ export default function Navbar() {
               <ul>
               <li className="underline-animation" onClick={() => router.push("/")}>Our Story</li>
               <li className="underline-animation" onClick={() => router.push("/?showMembership=true")}>Membership</li>
-              <li className="underline-animation" onClick={() => router.push("/")}>Write</li>
               {!userId && <li className="underline-animation" onClick={() => router.push("/sign-in")}>Sign In</li>}
+              {!userId && <li className="underline-animation" onClick={() => router.push("/sign-in")}>Sign Up</li>}
               </ul>
             </div>
           )}
