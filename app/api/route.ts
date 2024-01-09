@@ -8,7 +8,7 @@ export async function GET(request: Request) {
   const category = headersList.get("category") || "general";
   const keywords = headersList.get("keywords") || "";
   const page = searchParams.get("page") || "0";
-  const limit = searchParams.get("limit") || "14";
+  const limit = searchParams.get("limit") || "17";
   
   debugger;
   const res = await fetch(
