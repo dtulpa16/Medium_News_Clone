@@ -1,6 +1,6 @@
 import React from "react";
 import { UserButton, auth } from "@clerk/nextjs";
-import { SearchIcon, PencilAltIcon, UserIcon } from "@heroicons/react/outline";
+import { SearchIcon, PencilAltIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 export default async function SubPageNavBar() {
