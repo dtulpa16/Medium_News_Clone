@@ -15,8 +15,7 @@ export default async function SearchPage({
 }) {
   //Fetch Data
   const data = await fetch(`${process.env.BASE_URL}/api`, {
-    headers: { keywords: params.slug },
-    next: { revalidate: 85000 },
+    headers: { keywords: params.slug, limit: "14" },
   });
   //Parse Data
   const categoryNews = await data.json();
