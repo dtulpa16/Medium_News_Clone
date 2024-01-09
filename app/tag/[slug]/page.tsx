@@ -17,6 +17,7 @@ export default async function TagPage({
   //Fetch Data
   const data = await fetch(`${process.env.BASE_URL}/api`, {
     headers: { category: params.slug },
+    cache: 'no-store'
   });
   //Parse Data
   const categoryNews = await data.json();
