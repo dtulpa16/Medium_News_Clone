@@ -16,7 +16,7 @@ export default async function SearchPage({
   //Fetch Data
   const data = await fetch(`${process.env.BASE_URL}/api`, {
     headers: { keywords: params.slug },
-    cache: 'no-store'
+    next: { revalidate: 85000 },
   });
   //Parse Data
   const categoryNews = await data.json();
@@ -32,7 +32,7 @@ export default async function SearchPage({
     <TagStories key={el._id || i} article={el} index={i} />
   ));
 
-  return (
+  return recommendedNews ? (
     <div className=" bg-white min-h-screen">
       <SubPageNavBar />
 
@@ -52,5 +52,7 @@ export default async function SearchPage({
         </div>
       </Suspense>
     </div>
+  ) : (
+    <Loading />
   );
 }
