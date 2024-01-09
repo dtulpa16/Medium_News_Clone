@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.26.2",
+    "@clerk/nextjs": "^4.29.2",
     "@clerk/themes": "^1.7.9",
     "@heroicons/react": "^1.0.6",
     "@supabase/auth-helpers-nextjs": "^0.8.1",
