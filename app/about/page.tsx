@@ -1,10 +1,10 @@
 import Head from "next/head";
-import SubPageNavBar from "../components/SubPageNavBar";
+import SubPageNavBarCS from "../components/SubPageNavBarCS";
 
 export default function About() {
   return (
     <>
-      <SubPageNavBar />
+      <SubPageNavBarCS />
       <div className="  flex items-center bg-[#242424] text-white p-4 font-serif ">
         <Head>
           <title>About </title>
