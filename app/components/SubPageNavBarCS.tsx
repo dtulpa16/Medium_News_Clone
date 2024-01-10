@@ -3,7 +3,7 @@ import React from "react";
 import { UserButton } from "@clerk/nextjs";
 import { useAuth } from "@clerk/nextjs";
 import { SearchIcon, PencilAltIcon } from "@heroicons/react/outline";
-import { Link } from "react-router-dom";
+
 
 import { useRouter } from 'next/navigation'//
 export default async function SubPageNavBar() {
@@ -21,12 +21,12 @@ export default async function SubPageNavBar() {
             <div className="min-h-[19px] w-[4px] bg-black rounded-e-full rounded-s-full rounded-squeeze-bottom"></div>
           </div>
           {/* Brand  */}
-          <Link
-            to="/"
+          <button
+            onClick={()=>router.push("/")}
             className=" text-[25px] font-bold pl-1 hover:cursor-pointer text-black md:mr-4 font-serif tracking-tighter"
           >
             Medium
-          </Link>
+          </button>
           {/* Search Bar  */}
           <div className="md:flex items-center bg-[#F9F9F9] rounded-full pl-3 pr-5 min-h-[40px] hidden">
             <SearchIcon className="h-6 w-6 text-gray-500 mr-2" />
