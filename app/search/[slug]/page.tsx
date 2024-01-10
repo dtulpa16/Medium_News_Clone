@@ -1,7 +1,7 @@
 import { Article } from "@/app/lib/types";
 import React, { Suspense } from "react";
 import RecommendedStories from "@/app/tag/[slug]/RecommendedStories";
-import SubPageNavBar from "@/app/components/SubPageNavBar";
+import SubPageNavBarCS from "@/app/components/SubPageNavBarCS";
 import TagHeader from "@/app/tag/[slug]/TagHeader";
 import TagStories from "@/app/tag/[slug]/TagStories";
 import Loading from "@/app/tag/[slug]/loading";
@@ -33,7 +33,7 @@ export default async function SearchPage({
 
   return recommendedNews ? (
     <div className=" bg-white min-h-screen">
-      <SubPageNavBar />
+      <SubPageNavBarCS />
 
       <TagHeader tag={topic} />
       <Suspense fallback={<Loading />}>

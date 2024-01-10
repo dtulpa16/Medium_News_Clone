@@ -2,7 +2,7 @@ import NewsCard from "@/app/components/NewsCard";
 import { Article } from "@/app/lib/types";
 import React, { Suspense } from "react";
 import RecommendedStories from "./RecommendedStories";
-import SubPageNavBar from "@/app/components/SubPageNavBar";
+import SubPageNavBarCS from "@/app/components/SubPageNavBarCS";
 import TagHeader from "./TagHeader";
 import TagStories from "./TagStories";
 import Loading from "./loading";
@@ -34,7 +34,7 @@ export default async function TagPage({
 
   return (
     <div className=" bg-white min-h-screen">
-      <SubPageNavBar />
+      <SubPageNavBarCS />
 
       <TagHeader tag={topic} />
       <Suspense fallback={<Loading />}>
