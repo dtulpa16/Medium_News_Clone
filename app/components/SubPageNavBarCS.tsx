@@ -22,7 +22,7 @@ export default function SubPageNavBar() {
           </div>
           {/* Brand  */}
           <button
-            onClick={()=>router.push("/")}
+            onClick={()=>router.replace("/")}
             className=" text-[25px] font-bold pl-1 hover:cursor-pointer text-black md:mr-4 font-serif tracking-tighter"
           >
             Medium
@@ -30,7 +30,7 @@ export default function SubPageNavBar() {
           {/* Search Bar  */}
           <div className="md:flex items-center bg-[#F9F9F9] rounded-full pl-3 pr-5 min-h-[40px] hidden">
             <SearchIcon className="h-6 w-6 text-gray-500 mr-2" />
-            <form onSubmit={()=>router.push(`/search/${searchQuery}?value=${searchQuery}`)}
+            <form onSubmit={()=>router.replace(`/search/${searchQuery}?value=${searchQuery}`)}
             >
               <input
                 className="bg-[#F9F9F9] outline-none text-sm placeholder-gray-500 placeholder:font-thin placeholder:text-md"
@@ -53,13 +53,13 @@ export default function SubPageNavBar() {
           {!userId ? (
             <>
               <button
-                onClick={()=>router.push("/sign-up")}
+                onClick={()=>router.replace("/sign-up")}
                 className="bg-[#1a8917] text-white text-sm md:px-3 px-2 md:py-2 py-[3px] rounded-full shadow-sm hover:bg-green-600"
               >
                 Sign up
               </button>
               {/* Sign In  */}
-              <button onClick={()=>router.push("/sign-in")} className="text-sm">
+              <button onClick={()=>router.replace("/sign-in")} className="text-sm">
                 Sign in
               </button>
             </>
