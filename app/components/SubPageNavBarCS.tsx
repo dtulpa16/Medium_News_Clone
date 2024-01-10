@@ -6,7 +6,7 @@ import { SearchIcon, PencilAltIcon } from "@heroicons/react/outline";
 
 
 import { useRouter } from 'next/navigation'//
-export default async function SubPageNavBar() {
+export default function SubPageNavBar() {
   const {userId} = useAuth();//
   const router = useRouter()//
   const [searchQuery,setSearchQuery] = useState<string>()
@@ -52,16 +52,16 @@ export default async function SubPageNavBar() {
           {/* Sign Up  */}
           {!userId ? (
             <>
-              <Link
-                href="/sign-up"
+              <button
+                onClick={()=>router.push("/sign-up")}
                 className="bg-[#1a8917] text-white text-sm md:px-3 px-2 md:py-2 py-[3px] rounded-full shadow-sm hover:bg-green-600"
               >
                 Sign up
-              </Link>
+              </button>
               {/* Sign In  */}
-              <Link href="/sign-in" className="text-sm">
+              <button onClick={()=>router.push("/sign-in")} className="text-sm">
                 Sign in
-              </Link>
+              </button>
             </>
           ) : (
             <div className="mr-2">
