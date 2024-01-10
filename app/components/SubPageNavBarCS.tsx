@@ -3,13 +3,16 @@ import React,{useState} from "react";
 import { UserButton } from "@clerk/nextjs";
 import { useAuth } from "@clerk/nextjs";
 import { SearchIcon, PencilAltIcon } from "@heroicons/react/outline";
-
-
 import { useRouter } from 'next/navigation'//
+
 export default function SubPageNavBar() {
   const {userId} = useAuth();//
   const router = useRouter()//
   const [searchQuery,setSearchQuery] = useState<string>()
+  const handleSearch = (event: React.FormEvent<HTMLFormElement>) =>{
+    event.preventDefault();
+    router.push(`/search/${searchQuery}?value=${searchQuery}`)
+  }
   return (
     <nav className="bg-white shadow">
       <div className="w-[97%] mx-auto min-h-[83px] flex justify-between items-center">
@@ -22,7 +25,7 @@ export default function SubPageNavBar() {
           </div>
           {/* Brand  */}
           <button
-            onClick={()=>router.replace("/")}
+            onClick={()=>router.push("/")}
             className=" text-[25px] font-bold pl-1 hover:cursor-pointer text-black md:mr-4 font-serif tracking-tighter"
           >
             Medium
@@ -30,12 +33,13 @@ export default function SubPageNavBar() {
           {/* Search Bar  */}
           <div className="md:flex items-center bg-[#F9F9F9] rounded-full pl-3 pr-5 min-h-[40px] hidden">
             <SearchIcon className="h-6 w-6 text-gray-500 mr-2" />
-            <form onSubmit={()=>router.replace(`/search/${searchQuery}?value=${searchQuery}`)}
+            <form onSubmit={handleSearch}
             >
               <input
                 className="bg-[#F9F9F9] outline-none text-sm placeholder-gray-500 placeholder:font-thin placeholder:text-md"
                 type="text"
                 onChange={(e)=>setSearchQuery(e.target.value)}
+                value={searchQuery}
                 name="search"
                 placeholder="Search"
               />
@@ -53,13 +57,13 @@ export default function SubPageNavBar() {
           {!userId ? (
             <>
               <button
-                onClick={()=>router.replace("/sign-up")}
+                onClick={()=>router.push("/sign-up")}
                 className="bg-[#1a8917] text-white text-sm md:px-3 px-2 md:py-2 py-[3px] rounded-full shadow-sm hover:bg-green-600"
               >
                 Sign up
               </button>
               {/* Sign In  */}
-              <button onClick={()=>router.replace("/sign-in")} className="text-sm">
+              <button onClick={()=>router.push("/sign-in")} className="text-sm">
                 Sign in
               </button>
             </>
