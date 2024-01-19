@@ -372,46 +372,7 @@ export let defaultArticles: { data: any } = {
       shortLink:
         "https://www.sandiegouniontribune.com/news/public-safety/story/2023-12-19/marine-arrested-after-crash-chase-escondido-police",
     },
-    {
-      _id: "2023-12-19T20:28:41+00:00",
-      hasBody: true,
-      title: "After firing Majors, flailing Marvel needs a total reboot",
-      body: "Actor Jonathan Majors’ conviction Monday on charges of misdemeanor assault and harassment — and his resulting ouster by Marvel Studios — should be a wake-up call to Disney. That message from Captain Obvious? Start over completely. The need for a reboot of the MCU has been apparent for years now.&nbsp;Disney’s “don’t let the door hit...",
-      link: "https://nypost.com/2023/12/19/entertainment/marvel-needs-a-total-reboot-after-jonathan-majors-firing/",
-      sourceName: "Post",
-      image: "https://nypost.com/wp-content/uploads/sites/2/2023/12/marvel.gif",
-      publishedAt: "2023-12-19T20:28:41+00:00",
-      publishedTimestamp: "2023-12-19T20:28:41+00:00",
-      shortLink:
-        "https://nypost.com/2023/12/19/entertainment/marvel-needs-a-total-reboot-after-jonathan-majors-firing/",
-    },
-    {
-      _id: "2023-12-19T20:28:36+00:00",
-      hasBody: true,
-      title: "Dakota County approves 2024 budget, tax levy increase",
-      body: "Dakota County’s tax rate will remain the lowest among metro counties, according to a county news release.",
-      link: "https://www.twincities.com/2023/12/19/dakota-county-approves-2024-budget-tax-levy-increase/",
-      sourceName: "twincities",
-      image:
-        "https://www.twincities.com/wp-content/uploads/2023/01/Liz-Workman-e1672860441285.webp?w=1400px&strip=all",
-      publishedAt: "2023-12-19T20:28:36+00:00",
-      publishedTimestamp: "2023-12-19T20:28:36+00:00",
-      shortLink:
-        "https://www.twincities.com/2023/12/19/dakota-county-approves-2024-budget-tax-levy-increase/",
-    },
-    {
-      _id: "2023-12-19T20:28:32+00:00",
-      hasBody: true,
-      title: "Tommy Devito’s agent tried to shake down a pizza restaurant",
-      body: "Photo by Chris Graythen/Getty Images This is a horrible thing to do to a small business. Tommy Devito mania might have gone a touch too far. This week a family-run New Jersey pizza restaurant announced that a planned appearance by the Giants’ QB has been cancelled, as they were told by his agent Sean Stellato that Devito’s appearance fee was doubling, from $10,000 to $20,000.Posting a clip of Eli Manning visiting the restaurant in the past, Coniglio’s explained their decision on Instagram. View this post on Instagram A post shared by Coniglio's Old Fashioned (@coniglios)“No @tommydevito...",
-      link: "https://www.sbnation.com/nfl/2023/12/19/24008333/tommy-devito-agent-sean-stellato-pizza-restaurant-giants-nfl",
-      sourceName: "sbnation",
-      image: null,
-      publishedAt: "2023-12-19T20:28:32+00:00",
-      publishedTimestamp: "2023-12-19T20:28:32+00:00",
-      shortLink:
-        "https://www.sbnation.com/nfl/2023/12/19/24008333/tommy-devito-agent-sean-stellato-pizza-restaurant-giants-nfl",
-    },
+
   ],
 };
 export let defaultSports: { data: any } = {
