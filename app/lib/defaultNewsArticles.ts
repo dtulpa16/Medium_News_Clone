@@ -648,46 +648,6 @@ export let defaultSports: { data: any } = {
       shortLink:
         "https://techcrunch.com/2023/12/19/scaleops-looks-to-cut-cloud-bills-by-automating-kubernetes-configurations/",
     },
-    {
-      _id: "2023-12-19T15:08:55+00:00",
-      hasBody: true,
-      title: "The small and affordable EVs we lost in 2023",
-      body: "From the ElectraMeccanica Solo to the Honda e, let's remember all the small and low(er)-priced electric vehicles that didn't make it in 2023.© 2023 TechCrunch. All rights reserved. For personal use only.",
-      link: "https://techcrunch.com/2023/12/19/the-small-and-affordable-evs-we-lost-in-2023/",
-      sourceName: "TechCrunch",
-      image: null,
-      publishedAt: "2023-12-19T15:08:55+00:00",
-      publishedTimestamp: "2023-12-19T15:08:55+00:00",
-      shortLink:
-        "https://techcrunch.com/2023/12/19/the-small-and-affordable-evs-we-lost-in-2023/",
-    },
-    {
-      _id: "2023-12-19T15:06:40+00:00",
-      hasBody: true,
-      title:
-        "Meta’s Oversight Board says it unfairly removed videos of Israel-Hamas war",
-      body: "The Meta Oversight Board said removing the content could impact “freedom of expression and access to information” in the war. | Illustration: Nick Barclay / The Verge Meta’s Oversight Board has criticized the company’s automated moderation tools for being too aggressive after two videos that depicted hostages, injured civilians, and possible casualties in the Israel-Hamas war were — it says — unfairly removed from Facebook and Instagram. In a report published on Tuesday, the external review panel determined that the posts should have remained live and that removing the content has a...",
-      link: "https://www.theverge.com/2023/12/19/24007655/meta-oversight-board-removed-videos-israel-hamas-conflict",
-      sourceName: "The Verge",
-      image: null,
-      publishedAt: "2023-12-19T15:06:40+00:00",
-      publishedTimestamp: "2023-12-19T15:06:40+00:00",
-      shortLink:
-        "https://www.theverge.com/2023/12/19/24007655/meta-oversight-board-removed-videos-israel-hamas-conflict",
-    },
-    {
-      _id: "2023-12-19T15:00:49+00:00",
-      hasBody: true,
-      title: "Startup Shutdowns and AI Showdowns: the 2023 chronicles",
-      body: "Listen here or wherever you get your podcasts. Hello and welcome back to Equity, a podcast about the business of startups, where we unpack the numbers and nuance behind the headlines. This is the first of a two-part series that we built for you going back over critical themes from 2023. It was a very, very busy [&#8230;]© 2023 TechCrunch. All rights reserved. For personal use only.",
-      link: "https://techcrunch.com/2023/12/19/startup-shutdowns-and-ai-showdowns-the-2023-chronicles/",
-      sourceName: "TechCrunch",
-      image: null,
-      publishedAt: "2023-12-19T15:00:49+00:00",
-      publishedTimestamp: "2023-12-19T15:00:49+00:00",
-      shortLink:
-        "https://techcrunch.com/2023/12/19/startup-shutdowns-and-ai-showdowns-the-2023-chronicles/",
-    },
   ],
 };
 export let defaultTechnology: { data: any } = {
