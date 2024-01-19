@@ -4,10 +4,16 @@ import NewsCard from "./NewsCard";
 import TrendingIcon from "../lib/icons/TrendingIcon";
 import SubFeed from "./SubFeed";
 import DiscoverTabs from "./DiscoverTabs";
+import { defaultArticles } from "../lib/defaultNewsArticles";
 
 export default async function NewsFeedList() {
   const data = await fetch(`${process.env.BASE_URL}/api`);
-  let newsList = await data.json();
+  let newsList;
+  try{
+    newsList = await data.json();
+  }catch(er){
+    newsList = defaultArticles
+  }
   const mainNewsList = newsList.data.slice(0, 6);
   const subNewsList = newsList.data.slice(7, newsList.data.length);
   const newsFeed = mainNewsList.map((el: Article, i: number) => (
