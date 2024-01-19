@@ -235,144 +235,183 @@ export let defaultArticles: { data: any } = {
       shortLink:
         "https://www.etfdailynews.com/2023/12/19/ishares-1-3-year-treasury-bond-etf-nasdaqshy-shares-sold-by-pinnacle-wealth-management-group-inc/",
     },
-    {
-      _id: "2023-12-19T20:30:42+00:00",
-      hasBody: true,
-      title:
-        "Costco Wholesale Co. (NASDAQ:COST) Shares Purchased by Cullinan Associates Inc.",
-      body: "Cullinan Associates Inc. increased its holdings in shares of Costco Wholesale Co. (NASDAQ:COST &#8211; Free Report) by 7.3% in the third quarter, according to the company in its most recent filing with the SEC. The institutional investor owned 20,920 shares of the retailer&#8217;s stock after purchasing an additional 1,415 shares during the quarter. Cullinan Associates [&#8230;]",
-      link: "https://www.etfdailynews.com/2023/12/19/costco-wholesale-co-nasdaqcost-shares-purchased-by-cullinan-associates-inc/",
-      sourceName: "etfdailynews",
-      image: null,
-      publishedAt: "2023-12-19T20:30:42+00:00",
-      publishedTimestamp: "2023-12-19T20:30:42+00:00",
-      shortLink:
-        "https://www.etfdailynews.com/2023/12/19/costco-wholesale-co-nasdaqcost-shares-purchased-by-cullinan-associates-inc/",
-    },
-    {
-      _id: "2023-12-19T20:30:23+00:00",
-      hasBody: true,
-      title: "Cozy Book Recommendations for Sweater Weather",
-      body: "&#160; Sweater weather is upon us. Now is the perfect time to get away from the cold Utah weather by escaping into the expansive worlds of fiction. Several genres come to mind when imagining fall reading — dark academia, mystery, fantasy and horror to name a few. Complete the reading experience by enjoying a newly...The post Cozy Book Recommendations for Sweater Weather first appeared on The Daily Utah Chronicle.",
-      link: "https://dailyutahchronicle.com/2023/12/19/book-recommendations-for-sweater-weather/?utm_source=rss&utm_medium=rss&utm_campaign=book-recommendations-for-sweater-weather",
-      sourceName: "dailyutahchronicle",
-      image: null,
-      publishedAt: "2023-12-19T20:30:23+00:00",
-      publishedTimestamp: "2023-12-19T20:30:23+00:00",
-      shortLink:
-        "https://dailyutahchronicle.com/2023/12/19/book-recommendations-for-sweater-weather/?utm_source=rss&utm_medium=rss&utm_campaign=book-recommendations-for-sweater-weather",
-    },
-    {
-      _id: "2023-12-19T20:30:22+00:00",
-      hasBody: true,
-      title:
-        "Lawyers Dump Trevian Kutti, Lone Black Woman Indicted With Trump In Georgia RICO Case",
-      body: "Trevian Kutti—one of Donald Trump's initial 19 co-defendants indicted under RICO charges in Georgia—has been dropped by her lawyers.The post Lawyers Dump Trevian Kutti, Lone Black Woman Indicted With Trump In Georgia RICO Case appeared first on NewsOne.",
-      link: "https://newsone.com/4869097/lawyers-dump-trevian-kutti/",
-      sourceName: "newsone",
-      image:
-        "https://newsone.com/wp-content/uploads/sites/22/2023/12/17030107242557.jpg?quality=80&strip=all&crop=0px%2C306px%2C1024px%2C585px&resize=560%2C320",
-      publishedAt: "2023-12-19T20:30:22+00:00",
-      publishedTimestamp: "2023-12-19T20:30:22+00:00",
-      shortLink: "https://newsone.com/4869097/lawyers-dump-trevian-kutti/",
-    },
-    {
-      _id: "2023-12-19T20:30:08+00:00",
-      hasBody: true,
-      title:
-        "[Kim Seong-kon] For world peace, we should all be like 'The Interpreter'",
-      body: "The 2005 American political thriller, &ldquo;The Interpreter,&rdquo; directed by Sydney Pollack, illustrates how a good politician who was once a rebel leader fighting tyranny can easily turn into a dictator himself when he possesses political power. They say that you become a monster when you fight a monster. Of course, after slaying the monster, the idea is that you should return to being a normal human. Unfortunately, however, many monster fighters remain monsters and become dictators themsel",
-      link: "https://www.koreaherald.com/view.php?ud=20231219000800",
-      sourceName: "koreaherald",
-      image: null,
-      publishedAt: "2023-12-19T20:30:08+00:00",
-      publishedTimestamp: "2023-12-19T20:30:08+00:00",
-      shortLink: "https://www.koreaherald.com/view.php?ud=20231219000800",
-    },
-    {
-      _id: "2023-12-19T20:30:00+00:00",
-      hasBody: true,
-      title: "My Life With the Walter Boys Renewed for Season 2 at Netflix",
-      body: "The teen drama has garnered 20.4 million views since its Dec. 7 debutThe post ‘My Life With the Walter Boys’ Renewed for Season 2 at Netflix appeared first on TheWrap.",
-      link: "https://www.thewrap.com/my-life-with-the-walter-boys-renewed-season-2-netflix/",
-      sourceName: "thewrap",
-      image: null,
-      publishedAt: "2023-12-19T20:30:00+00:00",
-      publishedTimestamp: "2023-12-19T20:30:00+00:00",
-      shortLink:
-        "https://www.thewrap.com/my-life-with-the-walter-boys-renewed-season-2-netflix/",
-    },
-    {
-      _id: "2023-12-19T20:30:00+00:00",
-      hasBody: true,
-      title: "Islanders vs. Oilers prediction: NHL odds, best bet, pick",
-      body: "The Oilers and Islanders will meet again on Tuesday night on Long Island and, in a funny twist, both teams have showed some hints of being at a crossroads once again.",
-      link: "https://nypost.com/2023/12/19/sports/islanders-vs-oilers-prediction-bet-on-connor-mcdavid-to-deliver/",
-      sourceName: "Post",
-      image:
-        "https://nypost.com/wp-content/uploads/sites/2/2023/12/2023-12-17T060349Z_343609877_MT1USATODAY22124241_RTRMADP_3_NHL-FLORIDA-PANTHERS-AT-EDMONTON-OILE-e1702998545644.jpg?quality=90&strip=all",
-      publishedAt: "2023-12-19T20:30:00+00:00",
-      publishedTimestamp: "2023-12-19T20:30:00+00:00",
-      shortLink:
-        "https://nypost.com/2023/12/19/sports/islanders-vs-oilers-prediction-bet-on-connor-mcdavid-to-deliver/",
-    },
-    {
-      _id: "2023-12-19T20:29:52+00:00",
-      hasBody: true,
-      title:
-        "At Least 100 People Killed in Gaza From Israeli Strikes on Tuesday - Gaza Health Ministry",
-      body: "TUNIS (Sputnik) - At least 100 people were killed in the Gaza Strip as a result of Israeli strikes on Tuesday, a spokesperson for the enclave's Health Ministry said.",
-      link: "https://sputnikglobe.com/20231219/at-least-100-people-killed-in-gaza-from-israeli-strikes-on-tuesday---gaza-health-ministry-1115685424.html",
-      sourceName: "en",
-      image: null,
-      publishedAt: "2023-12-19T20:29:52+00:00",
-      publishedTimestamp: "2023-12-19T20:29:52+00:00",
-      shortLink:
-        "https://sputnikglobe.com/20231219/at-least-100-people-killed-in-gaza-from-israeli-strikes-on-tuesday---gaza-health-ministry-1115685424.html",
-    },
-    {
-      _id: "2023-12-19T20:29:46+00:00",
-      hasBody: true,
-      title:
-        "Sterling Police Department makes arrests for assault, drug possession",
-      body: "The following are reports from local law enforcement agencies. All defendants are presumed innocent until found guilty. STERLING POLICE DEPARTMENT Nov. 1 At 2:20 a.m. Jonathon Isaac, 27, was issued a citation in the 100 block of W. Main St. for trespassing. At 1:24 p.m. Rufina Gonzalez, 32, was issued a citation in the 100 block of E. Chestnut St. for failure to appear. At 9:53 p.m. Vanessa Jaquez, 34, was issued a citation in the 1500 block of W. Main St. for unlawful acts &#8211; theft detection devices. At 1:22 am. police were dispatched to the 1200 block of [&#8230;]",
-      link: "https://www.journal-advocate.com/2023/12/19/sterling-police-department-makes-arrests-for-assault-drug-possession/",
-      sourceName: "journal-advocate",
-      image: null,
-      publishedAt: "2023-12-19T20:29:46+00:00",
-      publishedTimestamp: "2023-12-19T20:29:46+00:00",
-      shortLink:
-        "https://www.journal-advocate.com/2023/12/19/sterling-police-department-makes-arrests-for-assault-drug-possession/",
-    },
-    {
-      _id: "2023-12-19T20:29:28+00:00",
-      hasBody: true,
-      title:
-        "Whiteville man arrested on sexual exploitation of a minor charges",
-      body: "A Whiteville man has been arrested on several charges. ",
-      link: "https://www.wwaytv3.com/whiteville-man-arrested-on-sexual-exploitation-of-a-minor-charges/",
-      sourceName: "wwaytv3",
-      image: null,
-      publishedAt: "2023-12-19T20:29:28+00:00",
-      publishedTimestamp: "2023-12-19T20:29:28+00:00",
-      shortLink:
-        "https://www.wwaytv3.com/whiteville-man-arrested-on-sexual-exploitation-of-a-minor-charges/",
-    },
-    {
-      _id: "2023-12-19T20:28:56+00:00",
-      hasBody: true,
-      title:
-        "Woman killed, Marine arrested after military pickup crashes during Escondido police chase",
-      body: "Police said they found the Marine and two women burglarizing a Dicks Sporting Goods store Monday",
-      link: "https://www.sandiegouniontribune.com/news/public-safety/story/2023-12-19/marine-arrested-after-crash-chase-escondido-police",
-      sourceName: "signonsandiego",
-      image: null,
-      publishedAt: "2023-12-19T20:28:56+00:00",
-      publishedTimestamp: "2023-12-19T20:28:56+00:00",
-      shortLink:
-        "https://www.sandiegouniontribune.com/news/public-safety/story/2023-12-19/marine-arrested-after-crash-chase-escondido-police",
-    },
-
+    // {
+    //   _id: "2023-12-19T20:30:42+00:00",
+    //   hasBody: true,
+    //   title:
+    //     "Costco Wholesale Co. (NASDAQ:COST) Shares Purchased by Cullinan Associates Inc.",
+    //   body: "Cullinan Associates Inc. increased its holdings in shares of Costco Wholesale Co. (NASDAQ:COST &#8211; Free Report) by 7.3% in the third quarter, according to the company in its most recent filing with the SEC. The institutional investor owned 20,920 shares of the retailer&#8217;s stock after purchasing an additional 1,415 shares during the quarter. Cullinan Associates [&#8230;]",
+    //   link: "https://www.etfdailynews.com/2023/12/19/costco-wholesale-co-nasdaqcost-shares-purchased-by-cullinan-associates-inc/",
+    //   sourceName: "etfdailynews",
+    //   image: null,
+    //   publishedAt: "2023-12-19T20:30:42+00:00",
+    //   publishedTimestamp: "2023-12-19T20:30:42+00:00",
+    //   shortLink:
+    //     "https://www.etfdailynews.com/2023/12/19/costco-wholesale-co-nasdaqcost-shares-purchased-by-cullinan-associates-inc/",
+    // },
+    // {
+    //   _id: "2023-12-19T20:30:23+00:00",
+    //   hasBody: true,
+    //   title: "Cozy Book Recommendations for Sweater Weather",
+    //   body: "&#160; Sweater weather is upon us. Now is the perfect time to get away from the cold Utah weather by escaping into the expansive worlds of fiction. Several genres come to mind when imagining fall reading — dark academia, mystery, fantasy and horror to name a few. Complete the reading experience by enjoying a newly...The post Cozy Book Recommendations for Sweater Weather first appeared on The Daily Utah Chronicle.",
+    //   link: "https://dailyutahchronicle.com/2023/12/19/book-recommendations-for-sweater-weather/?utm_source=rss&utm_medium=rss&utm_campaign=book-recommendations-for-sweater-weather",
+    //   sourceName: "dailyutahchronicle",
+    //   image: null,
+    //   publishedAt: "2023-12-19T20:30:23+00:00",
+    //   publishedTimestamp: "2023-12-19T20:30:23+00:00",
+    //   shortLink:
+    //     "https://dailyutahchronicle.com/2023/12/19/book-recommendations-for-sweater-weather/?utm_source=rss&utm_medium=rss&utm_campaign=book-recommendations-for-sweater-weather",
+    // },
+    // {
+    //   _id: "2023-12-19T20:30:22+00:00",
+    //   hasBody: true,
+    //   title:
+    //     "Lawyers Dump Trevian Kutti, Lone Black Woman Indicted With Trump In Georgia RICO Case",
+    //   body: "Trevian Kutti—one of Donald Trump's initial 19 co-defendants indicted under RICO charges in Georgia—has been dropped by her lawyers.The post Lawyers Dump Trevian Kutti, Lone Black Woman Indicted With Trump In Georgia RICO Case appeared first on NewsOne.",
+    //   link: "https://newsone.com/4869097/lawyers-dump-trevian-kutti/",
+    //   sourceName: "newsone",
+    //   image:
+    //     "https://newsone.com/wp-content/uploads/sites/22/2023/12/17030107242557.jpg?quality=80&strip=all&crop=0px%2C306px%2C1024px%2C585px&resize=560%2C320",
+    //   publishedAt: "2023-12-19T20:30:22+00:00",
+    //   publishedTimestamp: "2023-12-19T20:30:22+00:00",
+    //   shortLink: "https://newsone.com/4869097/lawyers-dump-trevian-kutti/",
+    // },
+    // {
+    //   _id: "2023-12-19T20:30:08+00:00",
+    //   hasBody: true,
+    //   title:
+    //     "[Kim Seong-kon] For world peace, we should all be like 'The Interpreter'",
+    //   body: "The 2005 American political thriller, &ldquo;The Interpreter,&rdquo; directed by Sydney Pollack, illustrates how a good politician who was once a rebel leader fighting tyranny can easily turn into a dictator himself when he possesses political power. They say that you become a monster when you fight a monster. Of course, after slaying the monster, the idea is that you should return to being a normal human. Unfortunately, however, many monster fighters remain monsters and become dictators themsel",
+    //   link: "https://www.koreaherald.com/view.php?ud=20231219000800",
+    //   sourceName: "koreaherald",
+    //   image: null,
+    //   publishedAt: "2023-12-19T20:30:08+00:00",
+    //   publishedTimestamp: "2023-12-19T20:30:08+00:00",
+    //   shortLink: "https://www.koreaherald.com/view.php?ud=20231219000800",
+    // },
+    // {
+    //   _id: "2023-12-19T20:30:00+00:00",
+    //   hasBody: true,
+    //   title: "My Life With the Walter Boys Renewed for Season 2 at Netflix",
+    //   body: "The teen drama has garnered 20.4 million views since its Dec. 7 debutThe post ‘My Life With the Walter Boys’ Renewed for Season 2 at Netflix appeared first on TheWrap.",
+    //   link: "https://www.thewrap.com/my-life-with-the-walter-boys-renewed-season-2-netflix/",
+    //   sourceName: "thewrap",
+    //   image: null,
+    //   publishedAt: "2023-12-19T20:30:00+00:00",
+    //   publishedTimestamp: "2023-12-19T20:30:00+00:00",
+    //   shortLink:
+    //     "https://www.thewrap.com/my-life-with-the-walter-boys-renewed-season-2-netflix/",
+    // },
+    // {
+    //   _id: "2023-12-19T20:30:00+00:00",
+    //   hasBody: true,
+    //   title: "Islanders vs. Oilers prediction: NHL odds, best bet, pick",
+    //   body: "The Oilers and Islanders will meet again on Tuesday night on Long Island and, in a funny twist, both teams have showed some hints of being at a crossroads once again.",
+    //   link: "https://nypost.com/2023/12/19/sports/islanders-vs-oilers-prediction-bet-on-connor-mcdavid-to-deliver/",
+    //   sourceName: "Post",
+    //   image:
+    //     "https://nypost.com/wp-content/uploads/sites/2/2023/12/2023-12-17T060349Z_343609877_MT1USATODAY22124241_RTRMADP_3_NHL-FLORIDA-PANTHERS-AT-EDMONTON-OILE-e1702998545644.jpg?quality=90&strip=all",
+    //   publishedAt: "2023-12-19T20:30:00+00:00",
+    //   publishedTimestamp: "2023-12-19T20:30:00+00:00",
+    //   shortLink:
+    //     "https://nypost.com/2023/12/19/sports/islanders-vs-oilers-prediction-bet-on-connor-mcdavid-to-deliver/",
+    // },
+    // {
+    //   _id: "2023-12-19T20:29:52+00:00",
+    //   hasBody: true,
+    //   title:
+    //     "At Least 100 People Killed in Gaza From Israeli Strikes on Tuesday - Gaza Health Ministry",
+    //   body: "TUNIS (Sputnik) - At least 100 people were killed in the Gaza Strip as a result of Israeli strikes on Tuesday, a spokesperson for the enclave's Health Ministry said.",
+    //   link: "https://sputnikglobe.com/20231219/at-least-100-people-killed-in-gaza-from-israeli-strikes-on-tuesday---gaza-health-ministry-1115685424.html",
+    //   sourceName: "en",
+    //   image: null,
+    //   publishedAt: "2023-12-19T20:29:52+00:00",
+    //   publishedTimestamp: "2023-12-19T20:29:52+00:00",
+    //   shortLink:
+    //     "https://sputnikglobe.com/20231219/at-least-100-people-killed-in-gaza-from-israeli-strikes-on-tuesday---gaza-health-ministry-1115685424.html",
+    // },
+    // {
+    //   _id: "2023-12-19T20:29:46+00:00",
+    //   hasBody: true,
+    //   title:
+    //     "Sterling Police Department makes arrests for assault, drug possession",
+    //   body: "The following are reports from local law enforcement agencies. All defendants are presumed innocent until found guilty. STERLING POLICE DEPARTMENT Nov. 1 At 2:20 a.m. Jonathon Isaac, 27, was issued a citation in the 100 block of W. Main St. for trespassing. At 1:24 p.m. Rufina Gonzalez, 32, was issued a citation in the 100 block of E. Chestnut St. for failure to appear. At 9:53 p.m. Vanessa Jaquez, 34, was issued a citation in the 1500 block of W. Main St. for unlawful acts &#8211; theft detection devices. At 1:22 am. police were dispatched to the 1200 block of [&#8230;]",
+    //   link: "https://www.journal-advocate.com/2023/12/19/sterling-police-department-makes-arrests-for-assault-drug-possession/",
+    //   sourceName: "journal-advocate",
+    //   image: null,
+    //   publishedAt: "2023-12-19T20:29:46+00:00",
+    //   publishedTimestamp: "2023-12-19T20:29:46+00:00",
+    //   shortLink:
+    //     "https://www.journal-advocate.com/2023/12/19/sterling-police-department-makes-arrests-for-assault-drug-possession/",
+    // },
+    // {
+    //   _id: "2023-12-19T20:29:28+00:00",
+    //   hasBody: true,
+    //   title:
+    //     "Whiteville man arrested on sexual exploitation of a minor charges",
+    //   body: "A Whiteville man has been arrested on several charges. ",
+    //   link: "https://www.wwaytv3.com/whiteville-man-arrested-on-sexual-exploitation-of-a-minor-charges/",
+    //   sourceName: "wwaytv3",
+    //   image: null,
+    //   publishedAt: "2023-12-19T20:29:28+00:00",
+    //   publishedTimestamp: "2023-12-19T20:29:28+00:00",
+    //   shortLink:
+    //     "https://www.wwaytv3.com/whiteville-man-arrested-on-sexual-exploitation-of-a-minor-charges/",
+    // },
+    // {
+    //   _id: "2023-12-19T20:28:56+00:00",
+    //   hasBody: true,
+    //   title:
+    //     "Woman killed, Marine arrested after military pickup crashes during Escondido police chase",
+    //   body: "Police said they found the Marine and two women burglarizing a Dicks Sporting Goods store Monday",
+    //   link: "https://www.sandiegouniontribune.com/news/public-safety/story/2023-12-19/marine-arrested-after-crash-chase-escondido-police",
+    //   sourceName: "signonsandiego",
+    //   image: null,
+    //   publishedAt: "2023-12-19T20:28:56+00:00",
+    //   publishedTimestamp: "2023-12-19T20:28:56+00:00",
+    //   shortLink:
+    //     "https://www.sandiegouniontribune.com/news/public-safety/story/2023-12-19/marine-arrested-after-crash-chase-escondido-police",
+    // },
+    // {
+    //   _id: "2023-12-19T20:28:41+00:00",
+    //   hasBody: true,
+    //   title: "After firing Majors, flailing Marvel needs a total reboot",
+    //   body: "Actor Jonathan Majors’ conviction Monday on charges of misdemeanor assault and harassment — and his resulting ouster by Marvel Studios — should be a wake-up call to Disney. That message from Captain Obvious? Start over completely. The need for a reboot of the MCU has been apparent for years now.&nbsp;Disney’s “don’t let the door hit...",
+    //   link: "https://nypost.com/2023/12/19/entertainment/marvel-needs-a-total-reboot-after-jonathan-majors-firing/",
+    //   sourceName: "Post",
+    //   image: "https://nypost.com/wp-content/uploads/sites/2/2023/12/marvel.gif",
+    //   publishedAt: "2023-12-19T20:28:41+00:00",
+    //   publishedTimestamp: "2023-12-19T20:28:41+00:00",
+    //   shortLink:
+    //     "https://nypost.com/2023/12/19/entertainment/marvel-needs-a-total-reboot-after-jonathan-majors-firing/",
+    // },
+    // {
+    //   _id: "2023-12-19T20:28:36+00:00",
+    //   hasBody: true,
+    //   title: "Dakota County approves 2024 budget, tax levy increase",
+    //   body: "Dakota County’s tax rate will remain the lowest among metro counties, according to a county news release.",
+    //   link: "https://www.twincities.com/2023/12/19/dakota-county-approves-2024-budget-tax-levy-increase/",
+    //   sourceName: "twincities",
+    //   image:
+    //     "https://www.twincities.com/wp-content/uploads/2023/01/Liz-Workman-e1672860441285.webp?w=1400px&strip=all",
+    //   publishedAt: "2023-12-19T20:28:36+00:00",
+    //   publishedTimestamp: "2023-12-19T20:28:36+00:00",
+    //   shortLink:
+    //     "https://www.twincities.com/2023/12/19/dakota-county-approves-2024-budget-tax-levy-increase/",
+    // },
+    // {
+    //   _id: "2023-12-19T20:28:32+00:00",
+    //   hasBody: true,
+    //   title: "Tommy Devito’s agent tried to shake down a pizza restaurant",
+    //   body: "Photo by Chris Graythen/Getty Images This is a horrible thing to do to a small business. Tommy Devito mania might have gone a touch too far. This week a family-run New Jersey pizza restaurant announced that a planned appearance by the Giants’ QB has been cancelled, as they were told by his agent Sean Stellato that Devito’s appearance fee was doubling, from $10,000 to $20,000.Posting a clip of Eli Manning visiting the restaurant in the past, Coniglio’s explained their decision on Instagram. View this post on Instagram A post shared by Coniglio's Old Fashioned (@coniglios)“No @tommydevito...",
+    //   link: "https://www.sbnation.com/nfl/2023/12/19/24008333/tommy-devito-agent-sean-stellato-pizza-restaurant-giants-nfl",
+    //   sourceName: "sbnation",
+    //   image: null,
+    //   publishedAt: "2023-12-19T20:28:32+00:00",
+    //   publishedTimestamp: "2023-12-19T20:28:32+00:00",
+    //   shortLink:
+    //     "https://www.sbnation.com/nfl/2023/12/19/24008333/tommy-devito-agent-sean-stellato-pizza-restaurant-giants-nfl",
+    // },
   ],
 };
 export let defaultSports: { data: any } = {
